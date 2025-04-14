@@ -1,0 +1,13 @@
+/*************  ✨ Windsurf Command ⭐  *************/
+# Ignore node_modules folder
+node_modules/
+
+# Ignore log files
+*.log
+
+# Ignore vscode settings
+.vscode/
+
+*.pycache
+*.pdf
+/*******  3a699a7e-cb4f-4d5f-9db2-8ac45313b2fc  *******/
