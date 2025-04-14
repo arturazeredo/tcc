@@ -1,0 +1,35 @@
+\chapter[Conclusão]{Conclusão}
+\label{cap-conclusao}
+%TCC:
+Este trabalho apresentou uma metodologia para a resolução de dúvidas de clientes reais sobre produtos do comércio eletrônico usando inteligência artificial, desde a etapa de definição das classes até a etapa de medidas e método de avaliação dos classificadores treinados. As disciplinas Algoritmos e Programação de Computadores e Inteligência Artificial, do curso de Graduação em Engenharia Mecatrônica da Universidade Federal de Uberlândia, se mostraram importantes para o entendimento dos conceitos teóricos aplicados na realização deste trabalho.
+
+O Mercado Livre foi a plataforma de comércio eletrônico escolhida, em virtude da grande quantidade de perguntas feitas na plataforma disponível na base de dados da empresa GoBots.
+
+Na prática, a metodologia consiste em tratar a situação como um problema de classificação de texto multi-classe, onde cada classe representa um atributo de produto. A resolução das dúvidas em si é feita após a predição da classe e consulta à API do Mercado Livre pelo nome do atributo inferido. No entanto, o trabalho apresentou um foco maior na etapa anterior à resolução das dúvidas, ou seja, no procedimento de treinamento dos modelos classificadores responsáveis por prever a qual atributo uma pergunta se refere.
+
+Para atingir o objetivo, foram realizadas as seguintes etapas da Classificação de Texto Multi-classe: definição das classes, coleta de dados, criação da base de dados rotulada, pré-processamento dos dados, treinamento dos algoritmos de classificação e medidas e método de avaliação dos classificadores. A abordagem de classificação de texto aplicada na base de dados rotulada foi o uso de dois modelos transformadores, BERT e DIETClassifier, avaliados quanto a diferentes configurações de hiperparâmetros e etapas de pré-processamento. 
+
+Os experimentos foram feitos em duas rodadas. Na primeira rodada, a base de dados se aproxima mais do problema real, pois consiste de 40 classes existentes no Mercado Livre. Nessa rodada, percebeu-se que a arquitetura de transformador que usa o modelo brasileiro BERTimbau Base tanto no pré-processamento quanto na classificação de texto apresentou um desempenho excelente em algumas classes específicas, porém abaixo da média em outras. Ao mesmo tempo, a arquitetura de transformador que usa BERTimbau Base no pré-processamento e DIETClassifier na classificação de texto apresentou um desempenho razoável em todas as classes.
+
+Na segunda rodada de experimentos, a base de dados foi aglutinada para 28 classes com o objetivo de minimizar as situações em que uma pergunta poderia ser classificada em mais de uma classe. Nessa situação, a arquitetura de transformador que usa BERTimbau Base tanto no pré-processamento quanto na classificação de texto se mostrou muito superior.
+
+Considerando a primeira rodada de experimentos, uma boa opção para a resolução de perguntas de clientes reais é aplicar o melhor modelo DIETClassifier e o melhor modelo BERT em paralelo. O primeiro, mais generalista, iria ponderar igualmente a possibilidade da pergunta pertencer a cada uma das classes. O segundo, mais especialista, serviria para verificar a previsão feita pelo primeiro, ao apresentar uma maior certeza quanto a classe a qual a pergunta pertence. Uma forma de se fazer isso frequentemente abordada na literatura é a criação de um mecanismo de votação, no qual os dois modelos classificam a pergunta fornecida ao mesmo tempo e tomam uma decisão em conjunto dependendo da pontuação retornada por cada modelo ao fazer a classificação.
+
+Algumas classes foram destaques negativos por conta da dificuldade dos modelos em aprenderem a identificá-las, em todas as configurações avaliadas. Entre esses destaques estão as classes que descrevem as marcas compatíveis com determinado produto e os modelos compatíveis com determinado produto.
+
+\section{Principais Contribuições}
+\begin{itemize}
+    \item Elaboração e divulgação de uma metodologia de resolução de dúvidas de clientes reais em plataformas de comércio eletrônico;
+    \item Indicação de duas arquiteturas de transformadores que apresentam bom desempenho na tarefa de classificação de perguntas quanto ao atributo de produto ao qual elas se referem;
+    \item Divulgação das medidas de avaliação atingidas pelas arquiteturas de transformadores utilizadas, que servem como motivação para que trabalhos futuros busquem melhores resultados;
+    \item Criação de uma base de dados rotulada privada, composta por 1419 exemplos de perguntas rotuladas a respeito do atributo de produto ao qual elas se referem.
+\end{itemize}
+
+\section{Trabalhos Futuros}
+Neste trabalho, foram treinados modelos classificadores de texto de alto desempenho na identificação de múltiplas classes. No entanto, a predição de algumas classes, notadamente as relacionadas com compatibilidade de produtos com marcas e modelos, apresentou resultados negativos.
+
+Para resolver esse problema, outras metodologias podem ser testadas. Entre elas, o uso de grandes estruturas de dados, como os grafos de conhecimento, que armazenam nomes de marcas e nomes de modelos. Uma outra possibilidade é o uso de modelos de aprendizado de máquina de dimensões maiores, como os modelos de linguagem de grande porte, que naturalmente guardam consigo noções de nomes de marcas e nomes de modelos por conta do seu alto número de parâmetros. Além disso, pode ser avaliada a possibilidade de que esses modelos apresentem uma maior facilidade na identificação de como os exemplos de cada classe são estruturados, pelo fato de terem sido treinados em um número muito maior de exemplos.
+
+Uma alternativa para o uso de modelos de aprendizado de máquina de dimensões maiores que também pode ser abordada em trabalhos futuros é o uso de técnicas de \textit{ensemble}, ou seja, fazer a classificação de uma mesma pergunta em modelos diferentes e usar um algoritmo de votação para determinar a resposta correta. O algoritmo de votação pode ser, por exemplo, considerar a classe prevista pela maioria dos modelos como a classe correta.
+
+Outros trabalhos podem apresentar resultados diferentes ao fazer uso de outras formas de pré-processamento. As pessoas frequentemente fazem uso de gírias ou grafias diferentes da norma culta da Língua Portuguesa ao fazer perguntas nos sites de \textit{e-commerce}, e os tokenizadores utilizados neste trabalho não são totalmente eficientes no tratamento dessas situações.

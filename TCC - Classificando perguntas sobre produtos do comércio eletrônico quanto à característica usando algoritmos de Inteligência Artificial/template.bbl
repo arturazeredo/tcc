@@ -1,0 +1,403 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.7 }
+
+\bibitem[Aggarwal e Zhai 2012]{survey}
+\abntrefinfo{Aggarwal e Zhai}{AGGARWAL; ZHAI}{2012}
+{AGGARWAL, C.~C.; ZHAI, C. A survey of text classification algorithms. In:  \textbf{Mining text data}. [S.l.]: Springer, 2012. p. 163--222.}
+
+\bibitem[Alammar 2018]{attention_explained}
+\abntrefinfo{Alammar}{ALAMMAR}{2018}
+{ALAMMAR, J. \textbf{Visualizing A Neural Machine Translation Model (Mechanics of Seq2seq Models With Attention)}. 2018.
+[Acesso em 16 Nov. 2022].
+Dispon{\'\i}vel em: \url{https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/}.}
+
+\bibitem[Bagatini e Laimer 2019]{bagatini}
+\abntrefinfo{Bagatini e Laimer}{BAGATINI; LAIMER}{2019}
+{BAGATINI, F.~Z.; LAIMER, C.~G. O contexto do e-commerce no brasil: An{\'a}lise do desempenho do varejo online no per{\'\i}odo de 2003 a 2018. In:  \textbf{CLAV 2019}. [S.l.: s.n.], 2019.}
+
+\bibitem[Brasil 2018]{lgpd}
+\abntrefinfo{Brasil}{BRASIL}{2018}
+{BRASIL. Lei nº 13.709, de 14 de agosto de 2018.
+\textbf{Diário Oficial [da] República Federativa do Brasil}, Brasília, DF, 2018.
+Dispon{\'\i}vel em: \url{https://www.planalto.gov.br/ccivil\_03/\_ato2015-2018/2018/lei/l13709.htm}.}
+
+\bibitem[Breiman 1996]{bagging}
+\abntrefinfo{Breiman}{BREIMAN}{1996}
+{BREIMAN, L. Bagging predictors.
+\textbf{Machine learning}, Springer, v.~24, n.~2, p. 123--140, 1996.}
+
+\bibitem[Brombim 2021]{reduzir_custos}
+\abntrefinfo{Brombim}{BROMBIM}{2021}
+{BROMBIM, E. \textbf{Como reduzir custos com atendimento}. 2021.
+[Acesso em 14 Nov. 2022].
+Dispon{\'\i}vel em: \url{https://www.ecommercebrasil.com.br/artigos/como-reduzir-custos-com-atendimento}.}
+
+\bibitem[Bunk et al. 2020]{diet_classifier}
+\abntrefinfo{Bunk et al.}{BUNK et al.}{2020}
+{BUNK, T.; VARSHNEYA, D.; VLASOV, V.; NICHOL, A. Diet: Lightweight language understanding for dialogue systems.
+\textbf{arXiv preprint arXiv:2004.09936}, 2020.}
+
+\bibitem[{Callcenter.inf.br} 2019]{ia_como_norma}
+\abntrefinfo{{Callcenter.inf.br}}{{Callcenter.inf.br}}{2019}
+{{Callcenter.inf.br}. \textbf{IA como norma}. 2019.
+[Acesso em 14 Nov. 2022].
+Dispon{\'\i}vel em: \url{https://www.callcenter.inf.br/estatisticas/69280/ia-como-norma/ler.aspx}.}
+
+\bibitem[Cassidy 2003]{dot.con}
+\abntrefinfo{Cassidy}{CASSIDY}{2003}
+{CASSIDY, J. \textbf{Dot.con: How America Lost Its Mind and Money in the Internet Era}. [S.l.]: Harper Perennial, 2003.
+ISBN 0060008814.}
+
+\bibitem[Cho et al. 2014]{attention_paper2}
+\abntrefinfo{Cho et al.}{CHO et al.}{2014}
+{CHO, K.; MERRI{\"E}NBOER, B. V.; GULCEHRE, C.; BAHDANAU, D.; BOUGARES, F.; SCHWENK, H.; BENGIO, Y. Learning phrase representations using rnn encoder-decoder for statistical machine translation.
+\textbf{arXiv preprint arXiv:1406.1078}, 2014.}
+
+\bibitem[Corr{\^e}a et al. 2017]{sentiment-analysis}
+\abntrefinfo{Corr{\^e}a et al.}{CORR{\^E}A et al.}{2017}
+{CORR{\^E}A, I.~T. et al. An{\'a}lise dos sentimentos expressos na rede social twitter em rela{\c{c}}{\~a}o aos filmes indicados ao oscar 2017.
+Universidade Federal de Uberl{\^a}ndia, 2017.}
+
+\bibitem[Cortes 2019]{relacionado_pt}
+\abntrefinfo{Cortes}{CORTES}{2019}
+{CORTES, E.~G.
+\textbf{Quando, Onde, Quem, O que ou Por que? Um Modelo Híbrido de Classificação de Perguntas para Sistemas de Question Answering}.
+Disserta\c{c}\~{a}o (Mestrado) --- Universidade Federal do Rio Grande do Sul, Porto Alegre, RS, 2019.}
+
+\bibitem[Cox e Snell 2018]{logistic_regression}
+\abntrefinfo{Cox e Snell}{COX; SNELL}{2018}
+{COX, D.~R.; SNELL, E.~J. \textbf{Analysis of binary data}. [S.l.]: Routledge, 2018.}
+
+\bibitem[Deniz, Erbay e Coşar 2022]{relacionado_tur}
+\abntrefinfo{Deniz, Erbay e Coşar}{DENIZ; ERBAY; COşAR}{2022}
+{DENIZ, E.; ERBAY, H.; COşAR, M. Multi-label classification of e-commerce customer reviews via machine learning.
+\textbf{Axioms}, MDPI AG, v.~11, n.~9, p.~436, Aug 2022.
+ISSN 2075-1680.
+Dispon{\'\i}vel em: \url{http://dx.doi.org/10.3390/axioms11090436}.}
+
+\bibitem[Devlin et al. 2019]{bert}
+\abntrefinfo{Devlin et al.}{DEVLIN et al.}{2019}
+{DEVLIN, J.; CHANG, M.-W.; LEE, K.; TOUTANOVA, K. {BERT}: Pre-training of deep bidirectional transformers for language understanding. In:  \textbf{Proceedings of the 2019 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)}. Minneapolis, Minnesota: Association for Computational Linguistics, 2019. p. 4171--4186. Dispon{\'\i}vel em: \url{https://aclanthology.org/N19-1423}.}
+
+\bibitem[Ebit e Nielsen 2021]{ebit}
+\abntrefinfo{Ebit e Nielsen}{EBIT; NIELSEN}{2021}
+{EBIT; NIELSEN. \textbf{Webshoppers 43}. 2021.
+[Acesso em 17 Out. 2022].
+Dispon{\'\i}vel em: \url{https://www.mobiletime.com.br/wp-content/uploads/2021/03/Webshoppers\_43.pdf}.}
+
+\bibitem[Etaiwi e Naymat 2017]{etaiwi2017impact}
+\abntrefinfo{Etaiwi e Naymat}{ETAIWI; NAYMAT}{2017}
+{ETAIWI, W.; NAYMAT, G. The impact of applying different preprocessing steps on review spam detection.
+\textbf{Procedia computer science}, Elsevier, v.~113, p. 273--279, 2017.}
+
+\bibitem[FEBRABAN e Deloitte 2024]{febraban2024}
+\abntrefinfo{FEBRABAN e Deloitte}{FEBRABAN; DELOITTE}{2024}
+{FEBRABAN; DELOITTE. \textbf{Pesquisa FEBRABAN de Tecnologia Bancária - Volume 2}. 2024. \url{https://www.febraban.org.br}.
+Acesso em: 9 abr. 2025.}
+
+\bibitem[Felitti 2021]{manual_usuario}
+\abntrefinfo{Felitti}{FELITTI}{2021}
+{FELITTI, G. \textbf{O Mercado Livre se veste de Amazon para combater a própria Amazon}. 2021. \url{https://manualdousuario.net/podcast/tecnocracia-47/}.
+Accesso em 26 Dez. 2022.}
+
+\bibitem[Fuchs e Acriche 2022]{relacionado_ing}
+\abntrefinfo{Fuchs e Acriche}{FUCHS; ACRICHE}{2022}
+{FUCHS, G.; ACRICHE, Y. Product titles-to-attributes as a text-to-text task. In:  \textbf{Proceedings of The Fifth Workshop on e-Commerce and NLP (ECNLP 5)}. [S.l.: s.n.], 2022. p. 91--98.}
+
+\bibitem[{Gov.br} 2022]{internet_brasil}
+\abntrefinfo{{Gov.br}}{{Gov.br}}{2022}
+{{Gov.br}. \textbf{90\% dos lares brasileiros já tem acesso à internet no Brasil, aponta pesquisa}. 2022.
+[Acesso em 31 Out. 2022].
+Dispon{\'\i}vel em: \url{https://www.gov.br/casacivil/pt-br/assuntos/noticias/2022/setembro/90-dos-lares-brasileiros-ja-tem-acesso-a-internet-no-brasil-aponta-pesquisa}.}
+
+\bibitem[Grandini, Bagli e Visani 2020]{metrics_survey}
+\abntrefinfo{Grandini, Bagli e Visani}{GRANDINI; BAGLI; VISANI}{2020}
+{GRANDINI, M.; BAGLI, E.; VISANI, G. Metrics for multi-class classification: an overview.
+\textbf{arXiv preprint arXiv:2008.05756}, 2020.}
+
+\bibitem[Harris 1954]{bag-of-wordsPaper}
+\abntrefinfo{Harris}{HARRIS}{1954}
+{HARRIS, Z.~S. Distributional structure.
+\textbf{WORD}, Routledge, v.~10, n.~2-3, p. 146--162, 1954.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1080/00437956.1954.11659520}.}
+
+\bibitem[Ho 1995]{random_forests}
+\abntrefinfo{Ho}{HO}{1995}
+{HO, T.~K. Random decision forests. In:  IEEE. \textbf{Proceedings of 3rd international conference on document analysis and recognition}. [S.l.], 1995. v.~1, p. 278--282.}
+
+\bibitem[Internet Resource Discovery Services by Bytes (Logarithmic Scale) 1994]{quarterman}
+\abntrefinfo{Internet\ldots}{INTERNET\ldots}{1994}
+{INTERNET Resource Discovery Services by Bytes (Logarithmic Scale). 1994. \url{http://www.quarterman.com/pictures/1991-1994--mn/SCAN0419.html}.
+Accesso em 26 Dez. 2022.}
+
+\bibitem[Iyyer et al. 2015]{dan}
+\abntrefinfo{Iyyer et al.}{IYYER et al.}{2015}
+{IYYER, M.; MANJUNATHA, V.; BOYD-GRABER, J.; III, H. D. Deep unordered composition rivals syntactic methods for text classification. In:  \textbf{Proceedings of the 53rd annual meeting of the association for computational linguistics and the 7th international joint conference on natural language processing (volume 1: Long papers)}. [S.l.: s.n.], 2015. p. 1681--1691.}
+
+\bibitem[Jiang et al. 2012]{k_nearest}
+\abntrefinfo{Jiang et al.}{JIANG et al.}{2012}
+{JIANG, S.; PANG, G.; WU, M.; KUANG, L. An improved k-nearest-neighbor algorithm for text categorization.
+\textbf{Expert Systems with Applications}, Elsevier, v.~39, n.~1, p. 1503--1509, 2012.}
+
+\bibitem[Jones 1972]{tf-idfPaper}
+\abntrefinfo{Jones}{JONES}{1972}
+{JONES, K. S. A statistical interpretation of term specificity and its application in retrieval.
+\textbf{Journal of documentation}, MCB UP Ltd, v.~28, n.~1, p. 11--21, 1972.}
+
+\bibitem[Kalchbrenner, Grefenstette e Blunsom 2014]{dcnn}
+\abntrefinfo{Kalchbrenner, Grefenstette e Blunsom}{KALCHBRENNER; GREFENSTETTE; BLUNSOM}{2014}
+{KALCHBRENNER, N.; GREFENSTETTE, E.; BLUNSOM, P. A convolutional neural network for modelling sentences.
+\textbf{arXiv preprint arXiv:1404.2188}, 2014.}
+
+\bibitem[Khan et al. 2017]{info-filtering}
+\abntrefinfo{Khan et al.}{KHAN et al.}{2017}
+{KHAN, I.; NAQVI, S.~K.; ALAM, M.; RIZVI, S. N.~A. An efficient framework for real-time tweet classification.
+\textbf{International Journal of Information Technology}, v.~9, n.~2, p. 215--221, Jun 2017.
+ISSN 2511-2112.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1007/s41870-017-0015-x}.}
+
+\bibitem[Kowsari et al. 2019]{survey2}
+\abntrefinfo{Kowsari et al.}{KOWSARI et al.}{2019}
+{KOWSARI, K.; MEIMANDI, K. J.; HEIDARYSAFA, M.; MENDU, S.; BARNES, L.; BROWN, D. Text classification algorithms: A survey.
+\textbf{Information}, MDPI, v.~10, n.~4, p.~150, 2019.}
+
+\bibitem[Liu et al. 2015]{mt-lstm}
+\abntrefinfo{Liu et al.}{LIU et al.}{2015}
+{LIU, P.; QIU, X.; CHEN, X.; WU, S.; HUANG, X.-J. Multi-timescale long short-term memory neural network for modelling sentences and documents. In:  \textbf{Proceedings of the 2015 conference on empirical methods in natural language processing}. [S.l.: s.n.], 2015. p. 2326--2335.}
+
+\bibitem[Liu et al. 2019]{roberta_paper}
+\abntrefinfo{Liu et al.}{LIU et al.}{2019}
+{LIU, Y.; OTT, M.; GOYAL, N.; DU, J.; JOSHI, M.; CHEN, D.; LEVY, O.; LEWIS, M.; ZETTLEMOYER, L.; STOYANOV, V. Roberta: A robustly optimized bert pretraining approach.
+\textbf{arXiv preprint arXiv:1907.11692}, 2019.}
+
+\bibitem[Luo et al. 2022]{chatbots_survey1}
+\abntrefinfo{Luo et al.}{LUO et al.}{2022}
+{LUO, B.; LAU, R. Y.~K.; LI, C.; SI, Y.-W. A critical review of state-of-the-art chatbot designs and applications.
+\textbf{WIREs Data Mining and Knowledge Discovery}, v.~12, n.~1, p. e1434, 2022.
+Dispon{\'\i}vel em: \url{https://wires.onlinelibrary.wiley.com/doi/abs/10.1002/widm.1434}.}
+
+\bibitem[Mantha 2020]{diet_blog}
+\abntrefinfo{Mantha}{MANTHA}{2020}
+{MANTHA, M. \textbf{Introducing DIET: state-of-the-art architecture that outperforms fine-tuning BERT and is 6X faster to train}. 2020.
+[Acesso em 27 Nov. 2022].
+Dispon{\'\i}vel em: \url{https://rasa.com/blog/introducing-dual-intent-and-entity-transformer-diet-state-of-the-art-performance-on-a-lightweight-architecture/}.}
+
+\bibitem[Matsubara, Martins e Monard 2003]{bag_of_words}
+\abntrefinfo{Matsubara, Martins e Monard}{MATSUBARA; MARTINS; MONARD}{2003}
+{MATSUBARA, E.~T.; MARTINS, C.~A.; MONARD, M.~C. Pretext: Uma ferramenta para pr{\'e}-processamento de textos utilizando a abordagem bag-of-words.
+\textbf{Techinical Report}, v.~209, n.~4, p. 10--11, 2003.}
+
+\bibitem[{Mercado Livre} 2020]{ml}
+\abntrefinfo{{Mercado Livre}}{{Mercado Livre}}{2020}
+{{Mercado Livre}. \textbf{História do Mercado Livre: nossos primeiros passos, nossa trajetória}. 2020.
+[Acesso em 30 Out. 2022].
+Dispon{\'\i}vel em: \url{https://www.mercadolivre.com.br/institucional/estamos/historia-do-mercado-livre}.}
+
+\bibitem[{MercadoLibre, Inc.} 2022]{ml_report}
+\abntrefinfo{{MercadoLibre, Inc.}}{{MercadoLibre, Inc.}}{2022}
+{{MercadoLibre, Inc.} \textbf{Reports: Second Quarter 2022}. 2022.
+[Acesso em 30 Out. 2022].
+Dispon{\'\i}vel em: \url{https://investor.mercadolibre.com/static-files/707802c1-7cfb-4cfc-86a1-cc99dea44df7}.}
+
+\bibitem[Mikolov et al. 2013]{word2vec}
+\abntrefinfo{Mikolov et al.}{MIKOLOV et al.}{2013}
+{MIKOLOV, T.; CHEN, K.; CORRADO, G.; DEAN, J. Efficient estimation of word representations in vector space.
+\textbf{arXiv preprint arXiv:1301.3781}, 2013.}
+
+\bibitem[Minaee et al. 2021]{survey3}
+\abntrefinfo{Minaee et al.}{MINAEE et al.}{2021}
+{MINAEE, S.; KALCHBRENNER, N.; CAMBRIA, E.; NIKZAD, N.; CHENAGHLU, M.; GAO, J. Deep learning--based text classification: A comprehensive review.
+\textbf{ACM Comput. Surv.}, Association for Computing Machinery, New York, NY, USA, v.~54, n.~3, apr 2021.
+ISSN 0360-0300.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1145/3439726}.}
+
+\bibitem[Mitchell 2018]{web_scaping}
+\abntrefinfo{Mitchell}{MITCHELL}{2018}
+{MITCHELL, R. \textbf{Web Scraping with Python: Collecting More Data from the Modern Web}. [S.l.]: O'Reilly Media, 2018.
+ISBN 9781491985526.}
+
+\bibitem[{Mona Bushnell} 2023]{chatbots_survey3}
+\abntrefinfo{{Mona Bushnell}}{{Mona Bushnell}}{2023}
+{{Mona Bushnell}. \textbf{Human or AI? Realistic Chatbots on the Rise}. 2023.
+[Acesso em 02 Mai. 2023].
+Dispon{\'\i}vel em: \url{https://www.businessnewsdaily.com/9821-smb-artificial-intelligence-chatbots.html}.}
+
+\bibitem[Mooney e Roy 2000]{recommender-systems}
+\abntrefinfo{Mooney e Roy}{MOONEY; ROY}{2000}
+{MOONEY, R.~J.; ROY, L. Content-based book recommending using learning for text categorization. In:  \textbf{Proceedings of the Fifth ACM Conference on Digital Libraries}. New York, NY, USA: Association for Computing Machinery, 2000.  (DL '00), p. 195–204.
+ISBN 158113231X. Dispon{\'\i}vel em: \url{https://doi.org/10.1145/336597.336662}.}
+
+\bibitem[Morgan e Sonquist 1963]{decision_tree}
+\abntrefinfo{Morgan e Sonquist}{MORGAN; SONQUIST}{1963}
+{MORGAN, J.~N.; SONQUIST, J.~A. Problems in the analysis of survey data, and a proposal.
+\textbf{Journal of the American statistical association}, Taylor \& Francis, v.~58, n.~302, p. 415--434, 1963.}
+
+\bibitem[Munkhdalai e Yu 2017]{nse}
+\abntrefinfo{Munkhdalai e Yu}{MUNKHDALAI; YU}{2017}
+{MUNKHDALAI, T.; YU, H. Neural semantic encoders. In:  NIH PUBLIC ACCESS. \textbf{Proceedings of the conference. Association for Computational Linguistics. Meeting}. [S.l.], 2017. v.~1, p.~397.}
+
+\bibitem[nuai, Ghasemkhani e Kannan 2017]{qna_field}
+\abntrefinfo{nuai, Ghasemkhani e Kannan}{NUAI; GHASEMKHANI; KANNAN}{2017}
+{NUAI, W. Khern-am; GHASEMKHANI, H.; KANNAN, K. How questions and answers shape online marketplaces: The case of amazon answer.
+2017.}
+
+\bibitem[Number of People Using the Internet 2023]{onu}
+\abntrefinfo{Number\ldots}{NUMBER\ldots}{2023}
+{NUMBER of People Using the Internet. 2023. \url{https://ourworldindata.org/grapher/number-of-internet-users?time=earliest..2000&country=~OWID_WRL}.
+Accesso em 03 Mar. 2023.}
+
+\bibitem[Pedregosa et al. 2011]{sk}
+\abntrefinfo{Pedregosa et al.}{PEDREGOSA et al.}{2011}
+{PEDREGOSA, F.; VAROQUAUX, G.; GRAMFORT, A.; MICHEL, V.; THIRION, B.; GRISEL, O.; BLONDEL, M.; PRETTENHOFER, P.; WEISS, R.; DUBOURG, V.; VANDERPLAS, J.; PASSOS, A.; COURNAPEAU, D.; BRUCHER, M.; PERROT, M.; DUCHESNAY, E. Scikit-learn: Machine learning in {P}ython.
+\textbf{Journal of Machine Learning Research}, v.~12, p. 2825--2830, 2011.}
+
+\bibitem[Pennington, Socher e Manning 2014]{glove}
+\abntrefinfo{Pennington, Socher e Manning}{PENNINGTON; SOCHER; MANNING}{2014}
+{PENNINGTON, J.; SOCHER, R.; MANNING, C.~D. Glove: Global vectors for word representation. In:  \textbf{Proceedings of the 2014 conference on empirical methods in natural language processing (EMNLP)}. [S.l.: s.n.], 2014. p. 1532--1543.}
+
+\bibitem[Porter 1980]{naive_bayes}
+\abntrefinfo{Porter}{PORTER}{1980}
+{PORTER, M.~F. An algorithm for suffix stripping.
+\textbf{Program}, MCB UP Ltd, 1980.}
+
+\bibitem[{Power Reviews} 2022]{qna_survey}
+\abntrefinfo{{Power Reviews}}{{Power Reviews}}{2022}
+{{Power Reviews}. \textbf{How Q\&A Eliminates Uncertainty and Boosts Ecommerce Sales}. 2022.
+[Acesso em 31 Out. 2022].
+Dispon{\'\i}vel em: \url{https://www.powerreviews.com/insights/how-q-and-a-boosts-ecommerce-sales/}.}
+
+\bibitem[Riloff 1995]{info-retrieval}
+\abntrefinfo{Riloff}{RILOFF}{1995}
+{RILOFF, E. Little words can make a big difference for text classification. In:  \textbf{Proceedings of the 18th annual international ACM SIGIR conference on Research and development in information retrieval}. [S.l.: s.n.], 1995. p. 130--136.}
+
+\bibitem[Rocchio 1971]{rocchio}
+\abntrefinfo{Rocchio}{ROCCHIO}{1971}
+{ROCCHIO, J. Relevance feedback in information retrieval.
+\textbf{The Smart retrieval system-experiments in automatic document processing}, Prentice Hall, p. 313--323, 1971.}
+
+\bibitem[Rosa 2019]{marketplace}
+\abntrefinfo{Rosa}{ROSA}{2019}
+{ROSA, J. R.~C.
+\textbf{Marketplace no Brasil: Desafios, Vantagens e Tendências deste Modelo de Negócio para Empresas Varejistas}.
+Disserta\c{c}\~{a}o (Mestrado) --- Faculdade FIA de Administração e Negócios, São Paulo, SP, Março 2019.}
+
+\bibitem[Rose, Haddock e Tucker 1997]{effects_of_corpus_size}
+\abntrefinfo{Rose, Haddock e Tucker}{ROSE; HADDOCK; TUCKER}{1997}
+{ROSE, T.; HADDOCK, N.; TUCKER, R. The effects of corpus size and homogeneity on language model quality.
+Goldsmiths, University of London, 1997.}
+
+\bibitem[Sammut e Webb 2010]{tf-idf}
+\abntrefinfo{Sammut e Webb}{SAMMUT; WEBB}{2010}
+{Tf--idf.
+In:  SAMMUT, C.; WEBB, G.~I. (Ed.). \textbf{Encyclopedia of Machine Learning}. Boston, MA: Springer US, 2010. p. 986--987.
+ISBN 978-0-387-30164-8.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1007/978-0-387-30164-8\_832}.}
+
+\bibitem[Sant'Anna et al. 2020]{kg}
+\abntrefinfo{Sant'Anna et al.}{SANT'ANNA et al.}{2020}
+{SANT'ANNA, D.~T.; CAUS, R.~O.; RAMOS, L. dos S.; HOCHGREB, V.; REIS, J.~C. dos. Generating knowledge graphs from unstructured texts: Experiences in the e-commerce field for question answering. In:  \textbf{ASLD@ ISWC}. [S.l.: s.n.], 2020. p. 56--71.}
+
+\bibitem[Schapire 1990]{boosting}
+\abntrefinfo{Schapire}{SCHAPIRE}{1990}
+{SCHAPIRE, R.~E. The strength of weak learnability.
+\textbf{Machine learning}, Springer, v.~5, n.~2, p. 197--227, 1990.}
+
+\bibitem[Schuster e Nakajima 2012]{wordpiece1}
+\abntrefinfo{Schuster e Nakajima}{SCHUSTER; NAKAJIMA}{2012}
+{SCHUSTER, M.; NAKAJIMA, K. Japanese and korean voice search. In:  IEEE. \textbf{2012 IEEE international conference on acoustics, speech and signal processing (ICASSP)}. [S.l.], 2012. p. 5149--5152.}
+
+\bibitem[Singh 2002]{singh}
+\abntrefinfo{Singh}{SINGH}{2002}
+{SINGH, M. E‐services and their role in b2c e‐commerce.
+\textbf{Managing Service Quality: An International Journal}, v.~12, n.~6, p. 434--446, 2002.}
+
+\bibitem[Souza, Nogueira e Lotufo 2020]{bertimbau}
+\abntrefinfo{Souza, Nogueira e Lotufo}{SOUZA; NOGUEIRA; LOTUFO}{2020}
+{SOUZA, F.; NOGUEIRA, R.; LOTUFO, R. Bertimbau: pretrained bert models for brazilian portuguese. In:  SPRINGER. \textbf{Intelligent Systems: 9th Brazilian Conference, BRACIS 2020, Rio Grande, Brazil, October 20--23, 2020, Proceedings, Part I 9}. [S.l.], 2020. p. 403--417.}
+
+\bibitem[Stone 2013]{loja_de_tudo}
+\abntrefinfo{Stone}{STONE}{2013}
+{STONE, B. \textbf{A loja de tudo}. Editora Intrinseca, 2013.
+ISBN 9788580574906. Dispon{\'\i}vel em: \url{https://books.google.com.br/books?id=2dktAwAAQBAJ}.}
+
+\bibitem[Sutskever, Vinyals e Le 2014]{attention_paper1}
+\abntrefinfo{Sutskever, Vinyals e Le}{SUTSKEVER; VINYALS; LE}{2014}
+{SUTSKEVER, I.; VINYALS, O.; LE, Q.~V. Sequence to sequence learning with neural networks.
+\textbf{Advances in neural information processing systems}, v.~27, 2014.}
+
+\bibitem[{The Data Detective} 2020]{80_20}
+\abntrefinfo{{The Data Detective}}{{The Data Detective}}{2020}
+{{The Data Detective}. \textbf{The 80/20 Split Intuition and an Alternative Split Method}. 2020.
+[Acesso em 14 Nov. 2022].
+Dispon{\'\i}vel em: \url{https://towardsdatascience.com/finally-why-we-use-an-80-20-split-for-training-and-test-data-plus-an-alternative-method-oh-yes-edc77e96295d}.}
+
+\bibitem[Thomas 2022]{ai_in_ecommerce}
+\abntrefinfo{Thomas}{THOMAS}{2022}
+{THOMAS, M. \textbf{AI in Retail and E-Commerce: 17 Examples to Know}. 2022. \url{https://builtin.com/artificial-intelligence/ai-retail-ecommerce-tech}.
+Accesso em 13 Mar. 2023.}
+
+\bibitem[{Tidio} 2023]{chatbots_survey2}
+\abntrefinfo{{Tidio}}{{Tidio}}{2023}
+{{Tidio}. \textbf{The Future of Chatbots: 80+ Chatbot Statistics for 2023}. 2023.
+[Acesso em 02 Mai. 2023].
+Dispon{\'\i}vel em: \url{https://www.tidio.com/blog/chatbot-statistics/}.}
+
+\bibitem[Tunstall, Werra e Wolf 2022]{transformers_book}
+\abntrefinfo{Tunstall, Werra e Wolf}{TUNSTALL; WERRA; WOLF}{2022}
+{TUNSTALL, L.; WERRA, L. von; WOLF, T. \textbf{Natural Language Processing with Transformers: Building Language Applications with Hugging Face}. [S.l.]: O'Reilly Media, 2022.
+ISBN 9781098103248.}
+
+\bibitem[Vajjala et al. 2020]{practical_nlp}
+\abntrefinfo{Vajjala et al.}{VAJJALA et al.}{2020}
+{VAJJALA, S.; MAJUMDER, B.; GUPTA, A.; SURANA, H. \textbf{Practical Natural Language Processing: A Comprehensive Guide to Building Real-World NLP Systems}. [S.l.]: O'Reilly Media, 2020.
+ISBN 9781492054023.}
+
+\bibitem[VanderPlas 2016]{data_science_handbook}
+\abntrefinfo{VanderPlas}{VANDERPLAS}{2016}
+{VANDERPLAS, J. \textbf{Python Data Science Handbook: Essential Tools for Working with Data}. [S.l.]: O'Reilly Media, Incorporated, 2016.
+ISBN 9781491912058.}
+
+\bibitem[Vapnik e Chervonenkis 1964]{svm}
+\abntrefinfo{Vapnik e Chervonenkis}{VAPNIK; CHERVONENKIS}{1964}
+{VAPNIK, V.; CHERVONENKIS, A.~Y. A class of algorithms for pattern recognition learning.
+\textbf{Avtomat. i Telemekh}, v.~25, n.~6, p. 937--945, 1964.}
+
+\bibitem[Vaswani et al. 2017]{attention_is_all_you_need}
+\abntrefinfo{Vaswani et al.}{VASWANI et al.}{2017}
+{VASWANI, A.; SHAZEER, N.; PARMAR, N.; USZKOREIT, J.; JONES, L.; GOMEZ, A.~N.; KAISER, {\L}.; POLOSUKHIN, I. Attention is all you need.
+\textbf{Advances in neural information processing systems}, v.~30, 2017.}
+
+\bibitem[Wang et al. 2020]{aliexpress}
+\abntrefinfo{Wang et al.}{WANG et al.}{2020}
+{WANG, Q.; YANG, L.; KANAGAL, B.; SANGHAI, S.; SIVAKUMAR, D.; SHU, B.; YU, Z.; ELSAS, J. Learning to extract attribute value from product via question answering: A multi-task approach. In:  \textbf{Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining}. [S.l.: s.n.], 2020. p. 47--55.}
+
+\bibitem[Wolf et al. 2020]{hf_transformers_paper}
+\abntrefinfo{Wolf et al.}{WOLF et al.}{2020}
+{WOLF, T.; DEBUT, L.; SANH, V.; CHAUMOND, J.; DELANGUE, C.; MOI, A.; CISTAC, P.; RAULT, T.; LOUF, R.; FUNTOWICZ, M.; DAVISON, J.; SHLEIFER, S.; PLATEN, P. von; MA, C.; JERNITE, Y.; PLU, J.; XU, C.; SCAO, T. L.; GUGGER, S.; DRAME, M.; LHOEST, Q.; RUSH, A. Transformers: State-of-the-art natural language processing. In:  \textbf{Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing: System Demonstrations}. Online: Association for Computational Linguistics, 2020. p. 38--45. Dispon{\'\i}vel em: \url{https://aclanthology.org/2020.emnlp-demos.6}.}
+
+\bibitem[Wu et al. 2016]{wordpiece2}
+\abntrefinfo{Wu et al.}{WU et al.}{2016}
+{WU, Y.; SCHUSTER, M.; CHEN, Z.; LE, Q.~V.; NOROUZI, M.; MACHEREY, W.; KRIKUN, M.; CAO, Y.; GAO, Q.; MACHEREY, K. et al. Google's neural machine translation system: Bridging the gap between human and machine translation.
+\textbf{arXiv preprint arXiv:1609.08144}, 2016.}
+
+\bibitem[Yan et al. 2017]{relacionado_chi}
+\abntrefinfo{Yan et al.}{YAN et al.}{2017}
+{YAN, Z.; DUAN, N.; CHEN, P.; ZHOU, M.; ZHOU, J.; LI, Z. Building task-oriented dialogue systems for online shopping.
+\textbf{Proceedings of the AAAI Conference on Artificial Intelligence}, v.~31, n.~1, Fev. 2017.
+Dispon{\'\i}vel em: \url{https://ojs.aaai.org/index.php/AAAI/article/view/11182}.}
+
+\bibitem[Zhu et al. 2015]{bookcorpus_paper}
+\abntrefinfo{Zhu et al.}{ZHU et al.}{2015}
+{ZHU, Y.; KIROS, R.; ZEMEL, R.; SALAKHUTDINOV, R.; URTASUN, R.; TORRALBA, A.; FIDLER, S. Aligning books and movies: Towards story-like visual explanations by watching movies and reading books. In:  \textbf{Proceedings of the IEEE international conference on computer vision}. [S.l.: s.n.], 2015. p. 19--27.}
+
+\bibitem[Zucchi e Reis 2021]{df}
+\abntrefinfo{Zucchi e Reis}{ZUCCHI; REIS}{2021}
+{ZUCCHI, L. E.~A.; REIS, J.~C. dos.
+\textbf{Sistema automatizado de questão e respostas em e-commerce baseado em similaridade de sentenças multilíngues}.
+Disserta\c{c}\~{a}o (Bacharelado) --- Universidade Estadual de Campinas, Campinas, SP, Julho 2021.}
+
+\end{thebibliography}
