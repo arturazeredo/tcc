@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.26)  9 APR 2025 12:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.26)  14 APR 2025 12:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1115,41 +1115,41 @@ LaTeX Warning: Reference `marketplaces' on page 15 undefined on input line 6.
 [17]
 
 [18]
-<figuras/montagem_perguntas.png, id=531, 1196.47pt x 734.745pt>
+<figuras/montagem_perguntas.png, id=534, 1196.47pt x 734.745pt>
 File: figuras/montagem_perguntas.png Graphic file (type png)
 <use figuras/montagem_perguntas.png>
-Package pdftex.def Info: figuras/montagem_perguntas.png  used on input line 70.
+Package pdftex.def Info: figuras/montagem_perguntas.png  used on input line 74.
 (pdftex.def)             Requested size: 398.33858pt x 244.61916pt.
 
 
-[19{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}]
+[19]
 
-[20 <./figuras/montagem_perguntas.png>]
-<figuras/api-cabecalho.png, id=574, 661.47125pt x 51.19125pt>
+[20{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc} <./figuras/montagem_perguntas.png>]
+<figuras/api-cabecalho.png, id=577, 661.47125pt x 51.19125pt>
 File: figuras/api-cabecalho.png Graphic file (type png)
 <use figuras/api-cabecalho.png>
-Package pdftex.def Info: figuras/api-cabecalho.png  used on input line 91.
+Package pdftex.def Info: figuras/api-cabecalho.png  used on input line 95.
 (pdftex.def)             Requested size: 455.0pt x 35.21185pt.
-<figuras/api-atributo2.png, id=575, 313.9228pt x 348.55219pt>
+<figuras/api-atributo2.png, id=578, 313.9228pt x 348.55219pt>
 File: figuras/api-atributo2.png Graphic file (type png)
 <use figuras/api-atributo2.png>
-Package pdftex.def Info: figuras/api-atributo2.png  used on input line 97.
+Package pdftex.def Info: figuras/api-atributo2.png  used on input line 101.
 (pdftex.def)             Requested size: 150.15083pt x 166.71278pt.
-<figuras/api-atributo1.png, id=576, 418.56375pt x 464.73625pt>
+<figuras/api-atributo1.png, id=579, 418.56375pt x 464.73625pt>
 File: figuras/api-atributo1.png Graphic file (type png)
 <use figuras/api-atributo1.png>
-Package pdftex.def Info: figuras/api-atributo1.png  used on input line 102.
+Package pdftex.def Info: figuras/api-atributo1.png  used on input line 106.
 (pdftex.def)             Requested size: 150.15083pt x 166.70924pt.
-<figuras/api-atributo3.png, id=577, 313.9228pt x 348.55219pt>
+<figuras/api-atributo3.png, id=580, 313.9228pt x 348.55219pt>
 File: figuras/api-atributo3.png Graphic file (type png)
 <use figuras/api-atributo3.png>
-Package pdftex.def Info: figuras/api-atributo3.png  used on input line 107.
+Package pdftex.def Info: figuras/api-atributo3.png  used on input line 111.
 (pdftex.def)             Requested size: 150.15083pt x 166.71278pt.
 
 
-[21 <./figuras/api-cabecalho.png> <./figuras/api-atributo2.png> <./figuras/api-atributo1.png> <./figuras/api-atributo3.png>]
+[21]
 
-[22]
+[22 <./figuras/api-cabecalho.png> <./figuras/api-atributo2.png> <./figuras/api-atributo1.png> <./figuras/api-atributo3.png>]
 
 [23]
 
@@ -1160,60 +1160,61 @@ Package pdftex.def Info: figuras/api-atributo3.png  used on input line 107.
 [26]
 
 [27]
-<figuras/input_ids.png, id=721, 1192.455pt x 178.6675pt>
+<figuras/input_ids.png, id=722, 1192.455pt x 178.6675pt>
 File: figuras/input_ids.png Graphic file (type png)
 <use figuras/input_ids.png>
-Package pdftex.def Info: figuras/input_ids.png  used on input line 249.
+Package pdftex.def Info: figuras/input_ids.png  used on input line 253.
 (pdftex.def)             Requested size: 398.33858pt x 59.6829pt.
-<figuras/tokens.png, id=730, 921.4425pt x 135.50626pt>
+
+
+[28{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]
+<figuras/tokens.png, id=743, 921.4425pt x 135.50626pt>
 File: figuras/tokens.png Graphic file (type png)
 <use figuras/tokens.png>
-Package pdftex.def Info: figuras/tokens.png  used on input line 258.
+Package pdftex.def Info: figuras/tokens.png  used on input line 262.
 (pdftex.def)             Requested size: 398.33858pt x 58.57875pt.
 
 
-[28{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc} <./figuras/input_ids.png>]
-
-[29 <./figuras/tokens.png>]
-<figuras/mecanismo_de_atencao.png, id=820, 398.4486pt x 227.6505pt>
+[29 <./figuras/input_ids.png> <./figuras/tokens.png>]
+<figuras/mecanismo_de_atencao.png, id=822, 398.4486pt x 227.6505pt>
 File: figuras/mecanismo_de_atencao.png Graphic file (type png)
 <use figuras/mecanismo_de_atencao.png>
-Package pdftex.def Info: figuras/mecanismo_de_atencao.png  used on input line 286.
+Package pdftex.def Info: figuras/mecanismo_de_atencao.png  used on input line 290.
 (pdftex.def)             Requested size: 398.33858pt x 227.59087pt.
 
 
-[30 <./figuras/mecanismo_de_atencao.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 306--306
+[30]
+Underfull \hbox (badness 10000) in paragraph at lines 310--310
 []|\T1/lmr/m/n/12 Auto-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 306--306
+Underfull \hbox (badness 10000) in paragraph at lines 310--310
 \T1/lmr/m/n/12 aten��o/Transformadores
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 306--306
+Underfull \hbox (badness 10000) in paragraph at lines 310--310
 \T1/lmr/m/n/12 (Self-
  []
 
 
 
-[31]
-<figuras/tarefas_do_DIET.png, id=863, 398.4486pt x 227.6505pt>
+[31 <./figuras/mecanismo_de_atencao.png>]
+
+[32]
+<figuras/tarefas_do_DIET.png, id=873, 398.4486pt x 227.6505pt>
 File: figuras/tarefas_do_DIET.png Graphic file (type png)
 <use figuras/tarefas_do_DIET.png>
-Package pdftex.def Info: figuras/tarefas_do_DIET.png  used on input line 328.
+Package pdftex.def Info: figuras/tarefas_do_DIET.png  used on input line 332.
 (pdftex.def)             Requested size: 398.33858pt x 227.59087pt.
 
 
-[32]
-
 [33 <./figuras/tarefas_do_diet.png>]
-<figuras/exemplo_filmes.png, id=885, 494.3268pt x 479.6319pt>
+<figuras/exemplo_filmes.png, id=888, 494.3268pt x 479.6319pt>
 File: figuras/exemplo_filmes.png Graphic file (type png)
 <use figuras/exemplo_filmes.png>
-Package pdftex.def Info: figuras/exemplo_filmes.png  used on input line 343.
+Package pdftex.def Info: figuras/exemplo_filmes.png  used on input line 347.
 (pdftex.def)             Requested size: 398.33858pt x 386.50174pt.
 
 
@@ -1231,7 +1232,7 @@ Package pdftex.def Info: figuras/exemplo_filmes.png  used on input line 343.
 \openout2 = `capitulos/desenvolvimento.aux'.
 
  (./capitulos/desenvolvimento.tex
-<figuras/metodologia_de_desenvolvimento2.pdf, id=980, 133.45859pt x 373.395pt>
+<figuras/metodologia_de_desenvolvimento2.pdf, id=983, 133.45859pt x 373.395pt>
 File: figuras/metodologia_de_desenvolvimento2.pdf Graphic file (type pdf)
 <use figuras/metodologia_de_desenvolvimento2.pdf>
 Package pdftex.def Info: figuras/metodologia_de_desenvolvimento2.pdf  used on input line 23.
@@ -1247,10 +1248,10 @@ Package pdftex.def Info: figuras/metodologia_de_desenvolvimento2.pdf  used on in
 \pydata@fh@_66F6181BCB4CFF4CD38FBC804A036DB6.data.minted=\write7
 \openout7 = `_66F6181BCB4CFF4CD38FBC804A036DB6.data.minted'.
 
-runsystem(latexminted config  --timestamp 20250409120102 66F6181BCB4CFF4CD38FBC804A036DB6)...executed safely (allowed).
+runsystem(latexminted config  --timestamp 20250414120020 66F6181BCB4CFF4CD38FBC804A036DB6)...executed safely (allowed).
 
  (./_66F6181BCB4CFF4CD38FBC804A036DB6.config.minted)
-runsystem(latexminted cleanconfig  --timestamp 20250409120102 66F6181BCB4CFF4CD38FBC804A036DB6)...executed safely (allowed).
+runsystem(latexminted cleanconfig  --timestamp 20250414120020 66F6181BCB4CFF4CD38FBC804A036DB6)...executed safely (allowed).
 
  (./_minted/default.style.minted) (./_minted/780FCB032AD19D4E0697985073D4C99F.highlight.minted)
 
@@ -1265,7 +1266,7 @@ runsystem(latexminted cleanconfig  --timestamp 20250409120102 66F6181BCB4CFF4CD3
 [45]
 
 [46]
-<figuras/aglutinacao_de_classes_pt.png, id=1087, 825.0825pt x 805.0075pt>
+<figuras/aglutinacao_de_classes_pt.png, id=1090, 825.0825pt x 805.0075pt>
 File: figuras/aglutinacao_de_classes_pt.png Graphic file (type png)
 <use figuras/aglutinacao_de_classes_pt.png>
 Package pdftex.def Info: figuras/aglutinacao_de_classes_pt.png  used on input line 250.
@@ -1310,7 +1311,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 373--375
 \openout2 = `capitulos/resultados.aux'.
 
  (./capitulos/resultados.tex
-<figuras/atributos_em_numero_de_subcategorias.png, id=1200, 1049.9225pt x 597.23125pt>
+<figuras/atributos_em_numero_de_subcategorias.png, id=1203, 1049.9225pt x 597.23125pt>
 File: figuras/atributos_em_numero_de_subcategorias.png Graphic file (type png)
 <use figuras/atributos_em_numero_de_subcategorias.png>
 Package pdftex.def Info: figuras/atributos_em_numero_de_subcategorias.png  used on input line 21.
@@ -1327,7 +1328,7 @@ Package pdftex.def Info: figuras/atributos_em_numero_de_subcategorias.png  used 
 [58 <./figuras/atributos_em_numero_de_subcategorias.png>]
 
 [59]
-<figuras/número_de_exemplos_40_classes.png, id=1220, 867.24pt x 433.62pt>
+<figuras/número_de_exemplos_40_classes.png, id=1223, 867.24pt x 433.62pt>
 File: figuras/número_de_exemplos_40_classes.png Graphic file (type png)
 <use figuras/número_de_exemplos_40_classes.png>
 Package pdftex.def Info: figuras/número_de_exemplos_40_classes.png  used on input line 118.
@@ -1335,7 +1336,7 @@ Package pdftex.def Info: figuras/número_de_exemplos_40_classes.png  used on inp
 
 
 [60 <./figuras/número_de_exemplos_40_classes.png>]
-<figuras/número_de_exemplos_28_classes.png, id=1231, 860.013pt x 426.393pt>
+<figuras/número_de_exemplos_28_classes.png, id=1234, 860.013pt x 426.393pt>
 File: figuras/número_de_exemplos_28_classes.png Graphic file (type png)
 <use figuras/número_de_exemplos_28_classes.png>
 Package pdftex.def Info: figuras/número_de_exemplos_28_classes.png  used on input line 172.
@@ -1353,12 +1354,12 @@ Package pdftex.def Info: figuras/número_de_exemplos_28_classes.png  used on inp
 [65]
 
 [66]
-<figuras/compatible_brands.png, id=1285, 1049.9225pt x 597.23125pt>
+<figuras/compatible_brands.png, id=1288, 1049.9225pt x 597.23125pt>
 File: figuras/compatible_brands.png Graphic file (type png)
 <use figuras/compatible_brands.png>
 Package pdftex.def Info: figuras/compatible_brands.png  used on input line 561.
 (pdftex.def)             Requested size: 455.0pt x 258.8184pt.
-<figuras/compatible_models.png, id=1286, 1049.9225pt x 597.23125pt>
+<figuras/compatible_models.png, id=1289, 1049.9225pt x 597.23125pt>
 File: figuras/compatible_models.png Graphic file (type png)
 <use figuras/compatible_models.png>
 Package pdftex.def Info: figuras/compatible_models.png  used on input line 568.
@@ -1367,6 +1368,151 @@ Package pdftex.def Info: figuras/compatible_models.png  used on input line 568.
 
 [67]
 
-[68 <./figuras/compatible_brands.png
-!pdfTeX error: pdflatex.exe (file ./figuras/compatible_brands.png): fflush() failed (Invalid argument)
- ==> Fatal error occurred, no output PDF file produced!
+[68 <./figuras/compatible_brands.png> <./figuras/compatible_models.png>])
+
+[69
+
+]
+\openout2 = `capitulos/conclusao.aux'.
+
+ (./capitulos/conclusao.tex
+
+[70
+
+
+
+
+]
+
+[71])
+
+[72] (./template.bbl (./template.brf)
+\tf@brf=\write8
+\openout8 = `template.brf'.
+
+
+bibitemlist
+
+
+[73
+
+
+
+]
+
+[74]
+
+[75]
+
+[76]
+
+[77]
+
+[78])
+
+[79]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\uppercase' on input line 343.
+
+
+
+[80
+
+
+]
+\openout2 = `capitulos/apendice.aux'.
+
+ (./capitulos/apendice.tex
+<figuras/HF1.png, id=1512, 1234.1307pt x 1187.1552pt>
+File: figuras/HF1.png Graphic file (type png)
+<use figuras/HF1.png>
+Package pdftex.def Info: figuras/HF1.png  used on input line 6.
+(pdftex.def)             Requested size: 455.0pt x 437.66458pt.
+<figuras/HF2.png, id=1513, 1228.59pt x 1176.3147pt>
+File: figuras/HF2.png Graphic file (type png)
+<use figuras/HF2.png>
+Package pdftex.def Info: figuras/HF2.png  used on input line 13.
+(pdftex.def)             Requested size: 455.0pt x 435.64246pt.
+<figuras/RASA1.png, id=1514, 1201.8501pt x 1297.2465pt>
+File: figuras/RASA1.png Graphic file (type png)
+<use figuras/RASA1.png>
+Package pdftex.def Info: figuras/RASA1.png  used on input line 20.
+(pdftex.def)             Requested size: 455.0pt x 491.09813pt.
+<figuras/RASA2.png, id=1515, 1201.8501pt x 1297.2465pt>
+File: figuras/RASA2.png Graphic file (type png)
+<use figuras/RASA2.png>
+Package pdftex.def Info: figuras/RASA2.png  used on input line 27.
+(pdftex.def)             Requested size: 455.0pt x 491.09813pt.
+<figuras/RASA3.png, id=1516, 1201.8501pt x 1297.2465pt>
+File: figuras/RASA3.png Graphic file (type png)
+<use figuras/RASA3.png>
+Package pdftex.def Info: figuras/RASA3.png  used on input line 34.
+(pdftex.def)             Requested size: 455.0pt x 491.09813pt.
+<figuras/HF2-28_classes.png, id=1517, 1197.9957pt x 1174.3875pt>
+File: figuras/HF2-28_classes.png Graphic file (type png)
+<use figuras/HF2-28_classes.png>
+Package pdftex.def Info: figuras/HF2-28_classes.png  used on input line 41.
+(pdftex.def)             Requested size: 455.0pt x 446.03894pt.
+<figuras/RASA3-28_classes.png, id=1518, 1201.8501pt x 1297.2465pt>
+File: figuras/RASA3-28_classes.png Graphic file (type png)
+<use figuras/RASA3-28_classes.png>
+Package pdftex.def Info: figuras/RASA3-28_classes.png  used on input line 48.
+(pdftex.def)             Requested size: 455.0pt x 491.09813pt.
+)
+
+[81
+
+
+ <./figuras/HF1.png>]
+
+[82 <./figuras/HF2.png>]
+
+[83 <./figuras/RASA1.png>]
+
+[84 <./figuras/RASA2.png>]
+
+[85 <./figuras/RASA3.png>]
+
+[86 <./figuras/HF2-28_classes.png>]
+
+[87 <./figuras/RASA3-28_classes.png>] (./template.ind)
+\tf@lof=\write9
+\openout9 = `template.lof'.
+
+\tf@lot=\write10
+\openout10 = `template.lot'.
+
+\tf@toc=\write11
+\openout11 = `template.toc'.
+
+ 
+enddocument/afterlastpage (AED): lastpage setting LastPage.
+(./template.aux (./capitulos/introducao.aux) (./capitulos/revisao_bibliografica.aux) (./capitulos/desenvolvimento.aux) (./capitulos/resultados.aux) (./capitulos/conclusao.aux) (./capitulos/apendice.aux))
+ ***********
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2020/03/25>
+ ***********
+
+
+LaTeX Warning: There were undefined references.
+
+Package rerunfilecheck Info: File `template.brf' has not changed.
+(rerunfilecheck)             Checksum: D1371B9E215A93DB2B34259D060CFC18;7483.
+ ) 
+Here is how much of TeX's memory you used:
+ 27785 strings out of 473190
+ 504731 string characters out of 5719979
+ 1393011 words of memory out of 5000000
+ 50153 multiletter control sequences out of 15000+600000
+ 660836 words of font info for 87 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 113i,15n,121p,2440b,1498s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss17.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
+Output written on template.pdf (88 pages, 4746632 bytes).
+PDF statistics:
+ 1915 PDF objects out of 2073 (max. 8388607)
+ 1719 compressed objects within 18 object streams
+ 362 named destinations out of 1000 (max. 500000)
+ 661 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,4 +1,3 @@
-/*************  ✨ Windsurf Command ⭐  *************/
 # Ignore node_modules folder
 node_modules/
 
@@ -9,5 +8,19 @@ node_modules/
 .vscode/
 
 *.pycache
+.pdf
 *.pdf
-/*******  3a699a7e-cb4f-4d5f-9db2-8ac45313b2fc  *******/
+
+## Core latex/pdflatex auxiliary files:
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+.*.lb
