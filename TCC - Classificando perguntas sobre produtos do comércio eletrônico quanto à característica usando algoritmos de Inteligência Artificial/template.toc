@@ -13,25 +13,25 @@
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase []{Revisão Bibliográfica}}{15}{chapter.2}%
 \contentsline {section}{\numberline {2.1}O Liveness ou Prova de vida no mercado}{15}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Mercado Livre}{16}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.1}Mercado Livre}{17}{subsection.2.1.1}%
 \contentsline {subsection}{\numberline {2.1.2}O Campo de Perguntas e Respostas e a sua Influência na Venda}{17}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}Migração para o Comércio Eletrônico}{17}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.3}Migração para o Comércio Eletrônico}{18}{subsection.2.1.3}%
 \contentsline {subsection}{\numberline {2.1.4}GoBots}{18}{subsection.2.1.4}%
-\contentsline {section}{\numberline {2.2}A Necessidade de um Sistema Computacional para Responder Perguntas de Clientes}{18}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Classificação de Perguntas Sobre Produtos Quanto ao Atributo}{19}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}O Conceito de Atributo no Mercado Livre}{20}{subsection.2.3.1}%
+\contentsline {section}{\numberline {2.2}A Necessidade de um Sistema Computacional para Responder Perguntas de Clientes}{19}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Classificação de Perguntas Sobre Produtos Quanto ao Atributo}{20}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}O Conceito de Atributo no Mercado Livre}{21}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}Dificuldades da Classificação de Perguntas quanto ao Atributo}{21}{subsection.2.3.2}%
 \contentsline {section}{\numberline {2.4}Etapas da Classificação de Perguntas Quanto ao Atributo}{23}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}Definição das Classes}{23}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Coleta de Dados}{23}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Anotação de Dados}{24}{subsection.2.4.3}%
-\contentsline {subsection}{\numberline {2.4.4}Pré-processamento dos Dados}{25}{subsection.2.4.4}%
-\contentsline {subsection}{\numberline {2.4.5}Transformação dos Dados}{26}{subsection.2.4.5}%
-\contentsline {subsubsection}{\numberline {2.4.5.1}Bag of Words e TF-IDF}{26}{subsubsection.2.4.5.1}%
+\contentsline {subsection}{\numberline {2.4.2}Coleta de Dados}{24}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Anotação de Dados}{25}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Pré-processamento dos Dados}{26}{subsection.2.4.4}%
+\contentsline {subsection}{\numberline {2.4.5}Transformação dos Dados}{27}{subsection.2.4.5}%
+\contentsline {subsubsection}{\numberline {2.4.5.1}Bag of Words e TF-IDF}{27}{subsubsection.2.4.5.1}%
 \contentsline {subsubsection}{\numberline {2.4.5.2}Tokenizadores}{28}{subsubsection.2.4.5.2}%
 \contentsline {subsection}{\numberline {2.4.6}Algoritmos Classificadores de Texto}{29}{subsection.2.4.6}%
-\contentsline {subsubsection}{\numberline {2.4.6.1}BERT}{29}{subsubsection.2.4.6.1}%
-\contentsline {subsubsection}{\numberline {2.4.6.2}DIETClassifier}{32}{subsubsection.2.4.6.2}%
+\contentsline {subsubsection}{\numberline {2.4.6.1}BERT}{30}{subsubsection.2.4.6.1}%
+\contentsline {subsubsection}{\numberline {2.4.6.2}DIETClassifier}{33}{subsubsection.2.4.6.2}%
 \contentsline {subsection}{\numberline {2.4.7}Métricas de Desempenho}{33}{subsection.2.4.7}%
 \contentsline {section}{\numberline {2.5}Trabalhos Relacionados}{36}{section.2.5}%
 \contentsline {section}{\numberline {2.6}Considerações Finais}{39}{section.2.6}%
