@@ -15,10 +15,6 @@
 [Acesso em 16 Nov. 2022].
 Dispon{\'\i}vel em: \url{https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/}.}
 
-\bibitem[Bagatini e Laimer 2019]{bagatini}
-\abntrefinfo{Bagatini e Laimer}{BAGATINI; LAIMER}{2019}
-{BAGATINI, F.~Z.; LAIMER, C.~G. O contexto do e-commerce no brasil: An{\'a}lise do desempenho do varejo online no per{\'\i}odo de 2003 a 2018. In:  \textbf{CLAV 2019}. [S.l.: s.n.], 2019.}
-
 \bibitem[Brasil 2018]{lgpd}
 \abntrefinfo{Brasil}{BRASIL}{2018}
 {BRASIL. Lei nº 13.709, de 14 de agosto de 2018.
@@ -108,12 +104,6 @@ Accesso em 26 Dez. 2022.}
 \abntrefinfo{Fuchs e Acriche}{FUCHS; ACRICHE}{2022}
 {FUCHS, G.; ACRICHE, Y. Product titles-to-attributes as a text-to-text task. In:  \textbf{Proceedings of The Fifth Workshop on e-Commerce and NLP (ECNLP 5)}. [S.l.: s.n.], 2022. p. 91--98.}
 
-\bibitem[{Gov.br} 2022]{internet_brasil}
-\abntrefinfo{{Gov.br}}{{Gov.br}}{2022}
-{{Gov.br}. \textbf{90\% dos lares brasileiros já tem acesso à internet no Brasil, aponta pesquisa}. 2022.
-[Acesso em 31 Out. 2022].
-Dispon{\'\i}vel em: \url{https://www.gov.br/casacivil/pt-br/assuntos/noticias/2022/setembro/90-dos-lares-brasileiros-ja-tem-acesso-a-internet-no-brasil-aponta-pesquisa}.}
-
 \bibitem[Grandini, Bagli e Visani 2020]{metrics_survey}
 \abntrefinfo{Grandini, Bagli e Visani}{GRANDINI; BAGLI; VISANI}{2020}
 {GRANDINI, M.; BAGLI, E.; VISANI, G. Metrics for multi-class classification: an overview.
@@ -196,12 +186,6 @@ Dispon{\'\i}vel em: \url{https://rasa.com/blog/introducing-dual-intent-and-entit
 {MATSUBARA, E.~T.; MARTINS, C.~A.; MONARD, M.~C. Pretext: Uma ferramenta para pr{\'e}-processamento de textos utilizando a abordagem bag-of-words.
 \textbf{Techinical Report}, v.~209, n.~4, p. 10--11, 2003.}
 
-\bibitem[{Mercado Livre} 2020]{ml}
-\abntrefinfo{{Mercado Livre}}{{Mercado Livre}}{2020}
-{{Mercado Livre}. \textbf{História do Mercado Livre: nossos primeiros passos, nossa trajetória}. 2020.
-[Acesso em 30 Out. 2022].
-Dispon{\'\i}vel em: \url{https://www.mercadolivre.com.br/institucional/estamos/historia-do-mercado-livre}.}
-
 \bibitem[{MercadoLibre, Inc.} 2022]{ml_report}
 \abntrefinfo{{MercadoLibre, Inc.}}{{MercadoLibre, Inc.}}{2022}
 {{MercadoLibre, Inc.} \textbf{Reports: Second Quarter 2022}. 2022.
@@ -245,11 +229,6 @@ ISBN 158113231X. Dispon{\'\i}vel em: \url{https://doi.org/10.1145/336597.336662}
 \abntrefinfo{Munkhdalai e Yu}{MUNKHDALAI; YU}{2017}
 {MUNKHDALAI, T.; YU, H. Neural semantic encoders. In:  NIH PUBLIC ACCESS. \textbf{Proceedings of the conference. Association for Computational Linguistics. Meeting}. [S.l.], 2017. v.~1, p.~397.}
 
-\bibitem[nuai, Ghasemkhani e Kannan 2017]{qna_field}
-\abntrefinfo{nuai, Ghasemkhani e Kannan}{NUAI; GHASEMKHANI; KANNAN}{2017}
-{NUAI, W. Khern-am; GHASEMKHANI, H.; KANNAN, K. How questions and answers shape online marketplaces: The case of amazon answer.
-2017.}
-
 \bibitem[Number of People Using the Internet 2023]{onu}
 \abntrefinfo{Number\ldots}{NUMBER\ldots}{2023}
 {NUMBER of People Using the Internet. 2023. \url{https://ourworldindata.org/grapher/number-of-internet-users?time=earliest..2000&country=~OWID_WRL}.
@@ -284,12 +263,6 @@ Dispon{\'\i}vel em: \url{https://www.powerreviews.com/insights/how-q-and-a-boost
 {ROCCHIO, J. Relevance feedback in information retrieval.
 \textbf{The Smart retrieval system-experiments in automatic document processing}, Prentice Hall, p. 313--323, 1971.}
 
-\bibitem[Rosa 2019]{marketplace}
-\abntrefinfo{Rosa}{ROSA}{2019}
-{ROSA, J. R.~C.
-\textbf{Marketplace no Brasil: Desafios, Vantagens e Tendências deste Modelo de Negócio para Empresas Varejistas}.
-Disserta\c{c}\~{a}o (Mestrado) --- Faculdade FIA de Administração e Negócios, São Paulo, SP, Março 2019.}
-
 \bibitem[Rose, Haddock e Tucker 1997]{effects_of_corpus_size}
 \abntrefinfo{Rose, Haddock e Tucker}{ROSE; HADDOCK; TUCKER}{1997}
 {ROSE, T.; HADDOCK, N.; TUCKER, R. The effects of corpus size and homogeneity on language model quality.
@@ -314,11 +287,6 @@ Dispon{\'\i}vel em: \url{https://doi.org/10.1007/978-0-387-30164-8\_832}.}
 \bibitem[Schuster e Nakajima 2012]{wordpiece1}
 \abntrefinfo{Schuster e Nakajima}{SCHUSTER; NAKAJIMA}{2012}
 {SCHUSTER, M.; NAKAJIMA, K. Japanese and korean voice search. In:  IEEE. \textbf{2012 IEEE international conference on acoustics, speech and signal processing (ICASSP)}. [S.l.], 2012. p. 5149--5152.}
-
-\bibitem[Singh 2002]{singh}
-\abntrefinfo{Singh}{SINGH}{2002}
-{SINGH, M. E‐services and their role in b2c e‐commerce.
-\textbf{Managing Service Quality: An International Journal}, v.~12, n.~6, p. 434--446, 2002.}
 
 \bibitem[Souza, Nogueira e Lotufo 2020]{bertimbau}
 \abntrefinfo{Souza, Nogueira e Lotufo}{SOUZA; NOGUEIRA; LOTUFO}{2020}

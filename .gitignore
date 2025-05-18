@@ -6,10 +6,12 @@ node_modules/
 
 # Ignore vscode settings
 .vscode/
-
+__pycache__/
 *.pycache
-.pdf
 *.pdf
+/.vscode/
+/node_modules/
+
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
@@ -27,3 +29,5 @@ node_modules/
 *.brf
 
 *.fls
+
+*.gz
