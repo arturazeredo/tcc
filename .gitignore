@@ -24,3 +24,6 @@ node_modules/
 *.cb
 *.cb2
 .*.lb
+*.brf
+
+*.fls
