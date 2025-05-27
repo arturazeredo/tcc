@@ -15,6 +15,23 @@
 [Acesso em 16 Nov. 2022].
 Dispon{\'\i}vel em: \url{https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/}.}
 
+\bibitem[{Amazon Web Services} 2023]{aws_rekognition_2023}
+\abntrefinfo{{Amazon Web Services}}{{Amazon Web Services}}{2023a}
+{{Amazon Web Services}. \textbf{Amazon Rekognition Face Liveness}. 2023.
+Acesso em: 19 maio 2025.
+Dispon{\'\i}vel em: \url{https://aws.amazon.com/pt/rekognition/face-liveness/}.}
+
+\bibitem[{Amazon Web Services} 2023]{aws_ai_cards_2023}
+\abntrefinfo{{Amazon Web Services}}{{Amazon Web Services}}{2023b}
+{\underline{\ \ \ \ \ \ \ \ }. \textbf{AWS AI Service Cards: Responsible AI Guidelines}.
+[S.l.], 2023. Acesso em: 19 maio 2025. Dispon{\'\i}vel em: \url{https://docs.aws.amazon.com/rekognition/latest/dg/face-liveness.html}.}
+
+\bibitem[{Amazon Web Services} 2023]{aws_blog_2023}
+\abntrefinfo{{Amazon Web Services}}{{Amazon Web Services}}{2023c}
+{\underline{\ \ \ \ \ \ \ \ }. \textbf{Detect Real Users with Face Liveness}. 2023.
+Acesso em: 19 maio 2025.
+Dispon{\'\i}vel em: \url{https://aws.amazon.com/blogs/machine-learning/detect-real-users-with-amazon-rekognition-face-liveness/}.}
+
 \bibitem[Brasil 2018]{lgpd}
 \abntrefinfo{Brasil}{BRASIL}{2018}
 {BRASIL. Lei nº 13.709, de 14 de agosto de 2018.
@@ -26,22 +43,10 @@ Dispon{\'\i}vel em: \url{https://www.planalto.gov.br/ccivil\_03/\_ato2015-2018/2
 {BREIMAN, L. Bagging predictors.
 \textbf{Machine learning}, Springer, v.~24, n.~2, p. 123--140, 1996.}
 
-\bibitem[Brombim 2021]{reduzir_custos}
-\abntrefinfo{Brombim}{BROMBIM}{2021}
-{BROMBIM, E. \textbf{Como reduzir custos com atendimento}. 2021.
-[Acesso em 14 Nov. 2022].
-Dispon{\'\i}vel em: \url{https://www.ecommercebrasil.com.br/artigos/como-reduzir-custos-com-atendimento}.}
-
 \bibitem[Bunk et al. 2020]{diet_classifier}
 \abntrefinfo{Bunk et al.}{BUNK et al.}{2020}
 {BUNK, T.; VARSHNEYA, D.; VLASOV, V.; NICHOL, A. Diet: Lightweight language understanding for dialogue systems.
 \textbf{arXiv preprint arXiv:2004.09936}, 2020.}
-
-\bibitem[{Callcenter.inf.br} 2019]{ia_como_norma}
-\abntrefinfo{{Callcenter.inf.br}}{{Callcenter.inf.br}}{2019}
-{{Callcenter.inf.br}. \textbf{IA como norma}. 2019.
-[Acesso em 14 Nov. 2022].
-Dispon{\'\i}vel em: \url{https://www.callcenter.inf.br/estatisticas/69280/ia-como-norma/ler.aspx}.}
 
 \bibitem[Cassidy 2003]{dot.con}
 \abntrefinfo{Cassidy}{CASSIDY}{2003}
@@ -90,6 +95,18 @@ Dispon{\'\i}vel em: \url{https://www.mobiletime.com.br/wp-content/uploads/2021/0
 {ETAIWI, W.; NAYMAT, G. The impact of applying different preprocessing steps on review spam detection.
 \textbf{Procedia computer science}, Elsevier, v.~113, p. 273--279, 2017.}
 
+\bibitem[{Exato Digital} 2025]{exato_digital_doccheck}
+\abntrefinfo{{Exato Digital}}{{Exato Digital}}{2025}
+{{Exato Digital}. \textbf{Validação Facial DocCheck}. 2025.
+Acesso em: 19 maio 2025.
+Dispon{\'\i}vel em: \url{https://blog.exato.digital/validacao-facial-doccheck/}.}
+
+\bibitem[{FaceTec, Inc.} 2025]{facetec_2025}
+\abntrefinfo{{FaceTec, Inc.}}{{FaceTec, Inc.}}{2025}
+{{FaceTec, Inc.} \textbf{FaceTec.com | 3D Liveness, 3D Face Matching, UR Codes}. 2025.
+Acesso em: 19 maio 2025.
+Dispon{\'\i}vel em: \url{https://www.facetec.com/}.}
+
 \bibitem[FEBRABAN e Deloitte 2024]{febraban2024}
 \abntrefinfo{FEBRABAN e Deloitte}{FEBRABAN; DELOITTE}{2024}
 {FEBRABAN; DELOITTE. \textbf{Pesquisa FEBRABAN de Tecnologia Bancária - Volume 2}. 2024. \url{https://www.febraban.org.br}.
@@ -128,6 +145,17 @@ Acesso em: 14 abr. 2025.}
 \abntrefinfo{Internet\ldots}{INTERNET\ldots}{1994}
 {INTERNET Resource Discovery Services by Bytes (Logarithmic Scale). 1994. \url{http://www.quarterman.com/pictures/1991-1994--mn/SCAN0419.html}.
 Accesso em 26 Dez. 2022.}
+
+\bibitem[{iProov Limited} 2025]{iproov_2025}
+\abntrefinfo{{iProov Limited}}{{iProov Limited}}{2025a}
+{{iProov Limited}. \textbf{iProov: Verificação Facial Segura e Autenticação Biométrica}. 2025.
+Acesso em: 19 maio 2025.
+Dispon{\'\i}vel em: \url{https://www.iproov.com/pt-br/}.}
+
+\bibitem[{iProov Limited} 2025]{iproov_threat_2025}
+\abntrefinfo{{iProov Limited}}{{iProov Limited}}{2025b}
+{\underline{\ \ \ \ \ \ \ \ }. \textbf{Relatório de Inteligência de Ameaças 2025}.
+[S.l.], 2025. Acesso em: 19 maio 2025. Dispon{\'\i}vel em: \url{https://www.iproov.com/press/annual-identity-verification-threat-intelligence-report}.}
 
 \bibitem[Iyyer et al. 2015]{dan}
 \abntrefinfo{Iyyer et al.}{IYYER et al.}{2015}
@@ -169,12 +197,6 @@ Dispon{\'\i}vel em: \url{https://doi.org/10.1007/s41870-017-0015-x}.}
 {LIU, Y.; OTT, M.; GOYAL, N.; DU, J.; JOSHI, M.; CHEN, D.; LEVY, O.; LEWIS, M.; ZETTLEMOYER, L.; STOYANOV, V. Roberta: A robustly optimized bert pretraining approach.
 \textbf{arXiv preprint arXiv:1907.11692}, 2019.}
 
-\bibitem[Luo et al. 2022]{chatbots_survey1}
-\abntrefinfo{Luo et al.}{LUO et al.}{2022}
-{LUO, B.; LAU, R. Y.~K.; LI, C.; SI, Y.-W. A critical review of state-of-the-art chatbot designs and applications.
-\textbf{WIREs Data Mining and Knowledge Discovery}, v.~12, n.~1, p. e1434, 2022.
-Dispon{\'\i}vel em: \url{https://wires.onlinelibrary.wiley.com/doi/abs/10.1002/widm.1434}.}
-
 \bibitem[Mantha 2020]{diet_blog}
 \abntrefinfo{Mantha}{MANTHA}{2020}
 {MANTHA, M. \textbf{Introducing DIET: state-of-the-art architecture that outperforms fine-tuning BERT and is 6X faster to train}. 2020.
@@ -209,12 +231,6 @@ Dispon{\'\i}vel em: \url{https://doi.org/10.1145/3439726}.}
 {MITCHELL, R. \textbf{Web Scraping with Python: Collecting More Data from the Modern Web}. [S.l.]: O'Reilly Media, 2018.
 ISBN 9781491985526.}
 
-\bibitem[{Mona Bushnell} 2023]{chatbots_survey3}
-\abntrefinfo{{Mona Bushnell}}{{Mona Bushnell}}{2023}
-{{Mona Bushnell}. \textbf{Human or AI? Realistic Chatbots on the Rise}. 2023.
-[Acesso em 02 Mai. 2023].
-Dispon{\'\i}vel em: \url{https://www.businessnewsdaily.com/9821-smb-artificial-intelligence-chatbots.html}.}
-
 \bibitem[Mooney e Roy 2000]{recommender-systems}
 \abntrefinfo{Mooney e Roy}{MOONEY; ROY}{2000}
 {MOONEY, R.~J.; ROY, L. Content-based book recommending using learning for text categorization. In:  \textbf{Proceedings of the Fifth ACM Conference on Digital Libraries}. New York, NY, USA: Association for Computing Machinery, 2000.  (DL '00), p. 195–204.
@@ -228,6 +244,12 @@ ISBN 158113231X. Dispon{\'\i}vel em: \url{https://doi.org/10.1145/336597.336662}
 \bibitem[Munkhdalai e Yu 2017]{nse}
 \abntrefinfo{Munkhdalai e Yu}{MUNKHDALAI; YU}{2017}
 {MUNKHDALAI, T.; YU, H. Neural semantic encoders. In:  NIH PUBLIC ACCESS. \textbf{Proceedings of the conference. Association for Computational Linguistics. Meeting}. [S.l.], 2017. v.~1, p.~397.}
+
+\bibitem[{National Institute of Standards and Technology} 2023]{nist_nvlap}
+\abntrefinfo{{National Institute of Standards and Technology}}{{National Institute of Standards and Technology}}{2023}
+{{National Institute of Standards and Technology}. \textbf{National Voluntary Laboratory Accreditation Program (NVLAP)}. 2023.
+Acesso em: 19 maio 2025.
+Dispon{\'\i}vel em: \url{https://www.nist.gov/nvlap}.}
 
 \bibitem[Number of People Using the Internet 2023]{onu}
 \abntrefinfo{Number\ldots}{NUMBER\ldots}{2023}
@@ -312,12 +334,6 @@ Dispon{\'\i}vel em: \url{https://towardsdatascience.com/finally-why-we-use-an-80
 \abntrefinfo{Thomas}{THOMAS}{2022}
 {THOMAS, M. \textbf{AI in Retail and E-Commerce: 17 Examples to Know}. 2022. \url{https://builtin.com/artificial-intelligence/ai-retail-ecommerce-tech}.
 Accesso em 13 Mar. 2023.}
-
-\bibitem[{Tidio} 2023]{chatbots_survey2}
-\abntrefinfo{{Tidio}}{{Tidio}}{2023}
-{{Tidio}. \textbf{The Future of Chatbots: 80+ Chatbot Statistics for 2023}. 2023.
-[Acesso em 02 Mai. 2023].
-Dispon{\'\i}vel em: \url{https://www.tidio.com/blog/chatbot-statistics/}.}
 
 \bibitem[Tunstall, Werra e Wolf 2022]{transformers_book}
 \abntrefinfo{Tunstall, Werra e Wolf}{TUNSTALL; WERRA; WOLF}{2022}
