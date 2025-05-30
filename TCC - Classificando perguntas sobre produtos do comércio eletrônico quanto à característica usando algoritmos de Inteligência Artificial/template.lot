@@ -1,18 +1,18 @@
 \babel@toc {brazil}{}\relax 
-\contentsline {table}{\numberline {1}{\ignorespaces Representação de documentos}}{27}{table.caption.13}%
-\contentsline {table}{\numberline {2}{\ignorespaces Os três mecanismos: pré-atenção, Atenção e Auto-atenção}}{32}{table.caption.18}%
-\contentsline {table}{\numberline {3}{\ignorespaces Categorias escolhidas para serem representadas na base de dados}}{42}{table.caption.24}%
-\contentsline {table}{\numberline {4}{\ignorespaces Classes escolhidas para serem representadas na base de dados}}{44}{table.caption.27}%
-\contentsline {table}{\numberline {5}{\ignorespaces Fontes para Coleta de Dados e estimativa de sua representatividade na base de dados}}{59}{table.caption.34}%
-\contentsline {table}{\numberline {6}{\ignorespaces Quantidade de exemplos rotulados para cada classe na configuração com 40 classes}}{59}{table.caption.35}%
-\contentsline {table}{\numberline {7}{\ignorespaces Quantidade de exemplos rotulados para cada classe na configuração com 28 classes}}{60}{table.caption.37}%
-\contentsline {table}{\numberline {8}{\ignorespaces Quantidade de exemplos de Treino e Teste para cada classe na configuração com 40 classes}}{62}{table.caption.39}%
-\contentsline {table}{\numberline {9}{\ignorespaces Quantidade de exemplos de Treino e Teste para cada classe na configuração com 28 classes}}{63}{table.caption.40}%
-\contentsline {table}{\numberline {10}{\ignorespaces Número de classes que atingiram o valor máximo e o valor mínimo das métricas de avaliação (base de dados com 40 classes)}}{64}{table.caption.41}%
-\contentsline {table}{\numberline {11}{\ignorespaces Métricas de avaliação ponderadas pelo número de exemplos de cada classe (base de dados com 40 classes)}}{64}{table.caption.42}%
-\contentsline {table}{\numberline {12}{\ignorespaces Classes com os maiores valores de Revocação (base de dados com 40 classes)}}{64}{table.caption.43}%
-\contentsline {table}{\numberline {13}{\ignorespaces Classes com os piores valores de Revocação (base de dados com 40 classes)}}{65}{table.caption.44}%
-\contentsline {table}{\numberline {14}{\ignorespaces Número de classes que atingiram o valor máximo e o valor mínimo das métricas de avaliação (base de dados com 28 classes)}}{65}{table.caption.45}%
-\contentsline {table}{\numberline {15}{\ignorespaces Métricas de avaliação ponderadas pelo número de exemplos de cada classe (base de dados com 28 classes)}}{66}{table.caption.46}%
-\contentsline {table}{\numberline {16}{\ignorespaces Classes com os maiores valores de Revocação (base de dados com 28 classes)}}{66}{table.caption.47}%
-\contentsline {table}{\numberline {17}{\ignorespaces Classes com os piores valores de Revocação (base de dados com 28 classes)}}{67}{table.caption.48}%
+\contentsline {table}{\numberline {1}{\ignorespaces Representação de documentos}}{26}{table.caption.12}%
+\contentsline {table}{\numberline {2}{\ignorespaces Os três mecanismos: pré-atenção, Atenção e Auto-atenção}}{31}{table.caption.17}%
+\contentsline {table}{\numberline {3}{\ignorespaces Categorias escolhidas para serem representadas na base de dados}}{41}{table.caption.23}%
+\contentsline {table}{\numberline {4}{\ignorespaces Classes escolhidas para serem representadas na base de dados}}{43}{table.caption.26}%
+\contentsline {table}{\numberline {5}{\ignorespaces Fontes para Coleta de Dados e estimativa de sua representatividade na base de dados}}{58}{table.caption.33}%
+\contentsline {table}{\numberline {6}{\ignorespaces Quantidade de exemplos rotulados para cada classe na configuração com 40 classes}}{58}{table.caption.34}%
+\contentsline {table}{\numberline {7}{\ignorespaces Quantidade de exemplos rotulados para cada classe na configuração com 28 classes}}{59}{table.caption.36}%
+\contentsline {table}{\numberline {8}{\ignorespaces Quantidade de exemplos de Treino e Teste para cada classe na configuração com 40 classes}}{61}{table.caption.38}%
+\contentsline {table}{\numberline {9}{\ignorespaces Quantidade de exemplos de Treino e Teste para cada classe na configuração com 28 classes}}{62}{table.caption.39}%
+\contentsline {table}{\numberline {10}{\ignorespaces Número de classes que atingiram o valor máximo e o valor mínimo das métricas de avaliação (base de dados com 40 classes)}}{63}{table.caption.40}%
+\contentsline {table}{\numberline {11}{\ignorespaces Métricas de avaliação ponderadas pelo número de exemplos de cada classe (base de dados com 40 classes)}}{63}{table.caption.41}%
+\contentsline {table}{\numberline {12}{\ignorespaces Classes com os maiores valores de Revocação (base de dados com 40 classes)}}{63}{table.caption.42}%
+\contentsline {table}{\numberline {13}{\ignorespaces Classes com os piores valores de Revocação (base de dados com 40 classes)}}{64}{table.caption.43}%
+\contentsline {table}{\numberline {14}{\ignorespaces Número de classes que atingiram o valor máximo e o valor mínimo das métricas de avaliação (base de dados com 28 classes)}}{64}{table.caption.44}%
+\contentsline {table}{\numberline {15}{\ignorespaces Métricas de avaliação ponderadas pelo número de exemplos de cada classe (base de dados com 28 classes)}}{65}{table.caption.45}%
+\contentsline {table}{\numberline {16}{\ignorespaces Classes com os maiores valores de Revocação (base de dados com 28 classes)}}{65}{table.caption.46}%
+\contentsline {table}{\numberline {17}{\ignorespaces Classes com os piores valores de Revocação (base de dados com 28 classes)}}{66}{table.caption.47}%

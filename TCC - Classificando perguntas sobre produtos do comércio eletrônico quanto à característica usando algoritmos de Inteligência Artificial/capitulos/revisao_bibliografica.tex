@@ -84,43 +84,43 @@ Além de atuar como uma parte integrante de um sistema que responde perguntas de
 
 No contexto de resolução de perguntas de clientes reais, a classificação de textos atua para que a pergunta feita seja entendida. Toda pergunta é um questionamento que um cliente possui sobre uma característica de um determinado produto. No contexto deste trabalho, cada classe que o modelo classificador consegue identificar representa uma característica que o produto tem, isto é, representa um atributo do produto. Assim, se um cliente está interessado em saber a marca de uma chave de fenda, ele pergunta "Qual é a marca da chave de fenda?". Esta pergunta, por sua vez, pode ser classificada como uma pergunta sobre o atributo ou classe "marca". Essa forma de responder perguntas encontra diversas dificuldades, que serão discutidas na seção \ref{dificuldades da classificação de perguntas quanto ao atributo}.
 
-\subsection{O Conceito de Atributo no Mercado Livre}
-\label{o conceito de atributo no mercado livre}
-Os atributos são características dos produtos adicionadas pelos lojistas no formato de pares (nome do atributo, valor do atributo). Eles podem ser acessados por meio de consultas à API do Mercado Livre. Dessa forma, após o modelo classificador prever o nome do atributo ao qual uma pergunta de um cliente real se refere, o valor do atributo pode ser obtido filtrando a resposta da consulta à API e procurando pelo nome do atributo.
+\subsection{Detecção de Manipulação de Imagens e Vídeos}
+\label{detecção de manipulação de imagens e vídeos}
+A crescente sofisticação das ferramentas de edição e geração de imagens e vídeos digitais impulsionou significativamente a necessidade de métodos robustos para a detecção de manipulações. Tais manipulações, que variam desde edições simples até a criação de deepfakes complexos, representam um desafio considerável para a verificação da autenticidade de conteúdo digital, com implicações diretas na disseminação de desinformação e em fraudes. Esta seção aborda as abordagens para a detecção dessas manipulações, iniciando pelas técnicas tradicionais baseadas na identificação de artefatos e inconsistências intrínsecas ao processo de alteração digital.
 
-Nesse sentido, após a execução da Classificação de Texto pelo modelo classificador, as perguntas feitas na Figura \ref{fig:montagem_perguntas} podem ser respondidas filtrando os nomes de atributos ESIMS\_NUMBER, DISPLAY\_SIZE e MODEL na resposta da consulta à API do Mercado Livre. Os valores dos atributos são 1 (indicando que o celular só possui entrada para um chip), 6,1'' (indicando que o celular possui 6,1 polegadas de tamanho), e iPhone 12 (indicando que o celular é do modelo padrão, e não do modelo Mini), respectivamente. A Figura \ref{fig:resposta_api} mostra a resposta da consulta à API do Mercado Livre.
+\subsubsection{Técnicas Tradicionais e Baseadas em Artefatos}
 
-\begin{figure}
-    \begin{subfigure}{\linewidth}
-        \includegraphics[width=\linewidth]{figuras/api-cabecalho.png}
-        \caption{}
-        \label{fig:header}
-    \end{subfigure}
-    
-    \begin{subfigure}{0.33\linewidth}
-        \includegraphics[width=\linewidth]{figuras/api-atributo2.png}
-        \caption{}
-        \label{fig:display_size}
-    \end{subfigure}%
-    \begin{subfigure}{0.33\linewidth}
-        \includegraphics[width=\linewidth]{figuras/api-atributo1.png}
-        \caption{}
-        \label{fig:esims_number}
-    \end{subfigure}%
-    \begin{subfigure}{0.33\linewidth}
-        \includegraphics[width=\linewidth]{figuras/api-atributo3.png}
-        \caption{}
-        \label{fig:model}
-    \end{subfigure}
+As primeiras abordagens para a detecção de manipulação de imagens frequentemente se concentravam na identificação de anomalias ou "impressões digitais" deixadas pelos processos de edição. Essas técnicas exploram inconsistências que surgem quando um conteúdo digital é alterado, assumindo que o processo de manipulação, por mais sofisticado que seja, introduzirá perturbações detectáveis em relação às características estatísticas de uma imagem autêntica.
 
-    \caption{Resposta da consulta à API de produtos do Mercado Livre, que retorna nomes e valores dos atributos.
-    Em \ref{fig:header}, informações sobre o produto.
-    Em \ref{fig:display_size}, a resposta para a pergunta ``Esse iPhone 12 é Dual SIM?''.
-    Em \ref{fig:esims_number}, a resposta para a pergunta ``Qual o tamanho desse celular?''.
-    Em \ref{fig:model}, a resposta para a pergunta ``Esse é o modelo Mini?''.}
-    \label{fig:resposta_api}
-\end{figure}
+\subsubsubsection{Análise de Ruído e Inconsistências Locais}
 
+Um dos pilares da análise forense de imagens digitais é o estudo dos padrões de ruído. Cada dispositivo de captura, seja uma câmera digital ou um scanner, introduz um padrão de ruído idiossincrático, parcialmente devido à Não Uniformidade da Resposta do Fotorreceptor (Photo-Response Non-Uniformity - PRNU). Este padrão, quase como uma impressão digital do sensor, pode ser utilizado para verificar a origem de uma imagem ou para detectar regiões que foram inseridas ou alteradas. A lógica subjacente é que uma manipulação, como a junção de partes de imagens distintas (splicing) ou a cópia de uma região para outra dentro da mesma imagem (copy-move), resultará em uma descontinuidade ou inconsistência nos padrões de ruído. O trabalho de Zhou et al. \cite{zhou2018manipulation} ilustra essa abordagem ao propor uma arquitetura de rede neural de duas vias, onde um dos fluxos é especificamente projetado para analisar as características de ruído da imagem. Este "fluxo de ruído" emprega filtros de Modelos Ricos em Esteganálise (Steganalysis Rich Models - SRM) para extrair descritores de ruído local, com o objetivo de identificar discrepâncias entre as regiões autênticas e as potencialmente manipuladas \cite{zhou2018manipulation}. A premissa é que, mesmo que um falsificador tente aplicar técnicas de pós-processamento para suavizar as transições, as estatísticas de ruído da região adulterada raramente corresponderão perfeitamente às da imagem hospedeira \cite{zhou2018manipulation}.
+
+Embora abordagens mais recentes, como a de Wu et al. \cite{wu2023rethinking}, utilizem técnicas avançadas como aprendizado contrastivo e agrupamento não supervisionado, elas ainda se fundamentam no princípio de que características forenses intrínsecas podem discriminar entre conteúdo original e forjado. Métodos tradicionais frequentemente utilizavam algoritmos de agrupamento (clustering) aplicados a características de ruído extraídas manualmente – como o nível de ruído geral da imagem ou padrões específicos do ruído da câmera – para classificar diferentes blocos ou pixels da imagem como pertencentes a regiões genuínas ou manipuladas \cite{wu2023rethinking}. No entanto, a eficácia dessas técnicas que dependem de características artesanais (hand-crafted features) é frequentemente limitada diante da crescente complexidade das manipulações e da aplicação de operações de pós-processamento que visam ocultar os vestígios da fraude \cite{wu2023rethinking}.
+
+\subsubsubsection(Análise de Compressão JPEG)
+
+O formato JPEG é, indiscutivelmente, um dos mais prevalentes para o armazenamento e transmissão de imagens digitais. Seu algoritmo de compressão, baseado na Transformada Discreta de Cosseno (DCT) e em tabelas de quantização, introduz artefatos característicos, como o efeito de blocagem em regiões de baixa frequência e padrões específicos nos coeficientes DCT. Esses artefatos, embora muitas vezes sutis ao olho humano, podem ser explorados para fins forenses. Uma manipulação comum ocorre quando uma imagem já comprimida em JPEG é editada e, subsequentemente, salva novamente no formato JPEG. Este processo, conhecido como dupla compressão JPEG, pode introduzir anomalias e inconsistências nos padrões de compressão que não estariam presentes em uma imagem comprimida uma única vez \cite{zhou2018manipulation}. A detecção dessas assinaturas de dupla compressão tem sido uma linha de investigação forense estabelecida. Wu et al. \cite{wu2023rethinking} mencionam a utilização do ruído de quantização JPEG como uma das características exploradas por métodos de agrupamento para a detecção de falsificações. De forma complementar, o trabalho CAT-Net, referenciado por Wu et al. \cite{wu2023rethinking}, foca na localização de regiões forjadas através da classificação dos coeficientes DCT, que são elementos centrais do processo de compressão JPEG. A análise da consistência desses coeficientes e das tabelas de quantização entre diferentes regiões de uma imagem pode, portanto, revelar áreas que foram submetidas a ciclos de compressão distintos, indicando uma possível manipulação. É importante notar que a robustez destas técnicas pode ser comprometida por operações de pós-processamento que visam atenuar ou remover os vestígios da compressão.
+
+\subsubsubsection{Outras Características Forenses}
+
+Além das assinaturas de ruído e dos artefatos de compressão, um espectro mais amplo de características forenses pode ser empregado para identificar manipulações visuais. Inconsistências na iluminação, como fontes de luz incompatíveis entre diferentes objetos ou pessoas em uma cena, direções de sombras que desafiam a geometria da cena, ou reflexos que não correspondem ao ambiente circundante, são frequentemente investigadas como indícios de adulteração. Similarmente, anomalias na perspectiva, onde objetos inseridos não se alinham corretamente com o ponto de fuga da imagem original, podem denunciar uma montagem.
+
+A análise de textura, conforme detalhado por Filho et al. \cite{filho_etal_texturas}, embora aplicada a imagens médicas, oferece um arcabouço conceitual relevante. Texturas são padrões espaciais que podem ser caracterizados estatisticamente. Uma manipulação pode introduzir uma região com uma textura que destoa do seu entorno ou pode interromper abruptamente um padrão textural preexistente. Medidas como as características de Haralick, que são derivadas de matrizes de coocorrência de níveis de cinza, quantificam propriedades texturais como homogeneidade, contraste, correlação e entropia \cite{filho_etal_texturas}. Por exemplo, o Segundo Momento Angular (SMA), também conhecido como energia, é uma medida da homogeneidade local dos níveis de cinza. Sua fórmula é dada por:
+\begin{equation}
+SMA = \sum_{i}\sum_{j}P(i,j)^2
+\label{eq:sma}
+\end{equation}
+onde P(i,j) é a entrada da matriz de coocorrência normalizada para os níveis de cinza i e j. Uma imagem ou região homogênea tende a ter poucas transições de níveis de cinza, resultando em uma matriz de coocorrência com poucas entradas de alta magnitude e, consequentemente, um valor de SMA elevado \cite{filho_etal_texturas}. O Contraste, por outro lado, mede a quantidade de variação local e é calculado como:
+\begin{equation}
+Contraste = \sum_{i}\sum_{j}(i-j)^2 P(i,j)
+\label{eq:contraste}
+\end{equation}
+Valores elevados de contraste indicam uma maior dispersão dos níveis de cinza \cite{filho_etal_texturas}. No contexto forense, a inserção de um objeto de outra imagem pode resultar em uma assinatura textural distinta que pode ser capturada por essas métricas.
+
+Adicionalmente, artefatos visuais nas bordas das regiões manipuladas são frequentemente explorados. Bordas que se apresentam excessivamente nítidas ou, inversamente, borradas de forma não natural em relação ao restante da imagem podem indicar uma colagem. Diferenças abruptas de contraste entre uma região suspeita e seu fundo imediato também são sinais de alerta \cite{zhou2018manipulation}. Outra característica investigada é a consistência dos padrões do Camera Filter Array (CFA). A maioria dos sensores de câmeras digitais utiliza um CFA (como o padrão Bayer) para capturar informações de cor, e o processo de interpolação para reconstruir uma imagem colorida completa (demosaicing) deixa traços específicos. Uma região importada de outra câmera ou gerada sinteticamente pode não exibir os mesmos artefatos de CFA ou pode interromper os padrões existentes na imagem hospedeira \cite{zhou2018manipulation}. Zhou et al. \cite{zhou2018manipulation} destacam que o fluxo RGB de sua rede neural é treinado para identificar justamente esses tipos de artefatos visuais, como as mencionadas fortes diferenças de contraste e bordas não naturais.
+
+Embora estas técnicas tradicionais tenham estabelecido as fundações da detecção de manipulação de imagens, a sua eficácia individual é frequentemente limitada pela crescente complexidade e realismo das manipulações, bem como pelo emprego de contramedidas forenses pelos perpetradores. Esta limitação pavimentou o caminho para o desenvolvimento de abordagens baseadas em aprendizado profundo, que demonstram maior capacidade de adaptação e generalização, e serão o foco da próxima discussão.
 
 \subsection{Dificuldades da Classificação de Perguntas quanto ao Atributo}
 \label{dificuldades da classificação de perguntas quanto ao atributo}
