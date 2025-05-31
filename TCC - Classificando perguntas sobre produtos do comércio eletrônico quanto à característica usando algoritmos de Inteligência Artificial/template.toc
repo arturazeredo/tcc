@@ -21,58 +21,64 @@
 \contentsline {subsection}{\numberline {2.3.1}Detecção de Manipulação de Imagens e Vídeos}{18}{subsection.2.3.1}%
 \contentsline {subsubsection}{\numberline {2.3.1.1}Técnicas Tradicionais e Baseadas em Artefatos}{18}{subsubsection.2.3.1.1}%
 \contentsline {paragraph}{\numberline {2.3.1.1.1}Análise de Ruído e Inconsistências Locais}{18}{paragraph.2.3.1.1.1}%
-\contentsline {paragraph}{\numberline {2.3.1.1.2}(}{19}{paragraph.2.3.1.1.2}%
+\contentsline {paragraph}{\numberline {2.3.1.1.2}Análise de Compressão JPEG}{19}{paragraph.2.3.1.1.2}%
 \contentsline {paragraph}{\numberline {2.3.1.1.3}Outras Características Forenses}{20}{paragraph.2.3.1.1.3}%
-\contentsline {subsection}{\numberline {2.3.2}Dificuldades da Classificação de Perguntas quanto ao Atributo}{21}{subsection.2.3.2}%
-\contentsline {section}{\numberline {2.4}Etapas da Classificação de Perguntas Quanto ao Atributo}{22}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Definição das Classes}{23}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Coleta de Dados}{23}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Anotação de Dados}{24}{subsection.2.4.3}%
-\contentsline {subsection}{\numberline {2.4.4}Pré-processamento dos Dados}{25}{subsection.2.4.4}%
-\contentsline {subsection}{\numberline {2.4.5}Transformação dos Dados}{26}{subsection.2.4.5}%
-\contentsline {subsubsection}{\numberline {2.4.5.1}Bag of Words e TF-IDF}{26}{subsubsection.2.4.5.1}%
-\contentsline {subsubsection}{\numberline {2.4.5.2}Tokenizadores}{27}{subsubsection.2.4.5.2}%
-\contentsline {subsection}{\numberline {2.4.6}Algoritmos Classificadores de Texto}{28}{subsection.2.4.6}%
-\contentsline {subsubsection}{\numberline {2.4.6.1}BERT}{28}{subsubsection.2.4.6.1}%
-\contentsline {subsubsection}{\numberline {2.4.6.2}DIETClassifier}{31}{subsubsection.2.4.6.2}%
-\contentsline {subsection}{\numberline {2.4.7}Métricas de Desempenho}{32}{subsection.2.4.7}%
-\contentsline {section}{\numberline {2.5}Trabalhos Relacionados}{35}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Considerações Finais}{38}{section.2.6}%
+\contentsline {subsubsection}{\numberline {2.3.1.2}Tecnologia por Trás dos Deepfakes}{21}{subsubsection.2.3.1.2}%
+\contentsline {paragraph}{\numberline {2.3.1.2.1}Autoencoders}{21}{paragraph.2.3.1.2.1}%
+\contentsline {paragraph}{\numberline {2.3.1.2.2}Redes Adversariais Generativas (GANs)}{22}{paragraph.2.3.1.2.2}%
+\contentsline {subsubsection}{\numberline {2.3.1.3}Abordagens Baseadas em Deep Learning para Detecção de Manipulação Facial e Geral}{23}{subsubsection.2.3.1.3}%
+\contentsline {paragraph}{\numberline {2.3.1.3.1}Redes Neurais Convolucionais (CNNs) para Extração de Características e Detecção}{23}{paragraph.2.3.1.3.1}%
+\contentsline {paragraph}{\numberline {2.3.1.3.2}Detecção Baseada em Sinais Biológicos e Fisiológicos}{25}{paragraph.2.3.1.3.2}%
+\contentsline {subsection}{\numberline {2.3.2}Dificuldades da Classificação de Perguntas quanto ao Atributo}{27}{subsection.2.3.2}%
+\contentsline {section}{\numberline {2.4}Etapas da Classificação de Perguntas Quanto ao Atributo}{29}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Definição das Classes}{29}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Coleta de Dados}{30}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Anotação de Dados}{30}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Pré-processamento dos Dados}{31}{subsection.2.4.4}%
+\contentsline {subsection}{\numberline {2.4.5}Transformação dos Dados}{32}{subsection.2.4.5}%
+\contentsline {subsubsection}{\numberline {2.4.5.1}Bag of Words e TF-IDF}{32}{subsubsection.2.4.5.1}%
+\contentsline {subsubsection}{\numberline {2.4.5.2}Tokenizadores}{34}{subsubsection.2.4.5.2}%
+\contentsline {subsection}{\numberline {2.4.6}Algoritmos Classificadores de Texto}{35}{subsection.2.4.6}%
+\contentsline {subsubsection}{\numberline {2.4.6.1}BERT}{35}{subsubsection.2.4.6.1}%
+\contentsline {subsubsection}{\numberline {2.4.6.2}DIETClassifier}{38}{subsubsection.2.4.6.2}%
+\contentsline {subsection}{\numberline {2.4.7}Métricas de Desempenho}{38}{subsection.2.4.7}%
+\contentsline {section}{\numberline {2.5}Trabalhos Relacionados}{42}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Considerações Finais}{44}{section.2.6}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{Método para Avaliação de Classificadores Treinados na Base de Dados do Mercado Livre}}{39}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Visão Geral do Método para Avaliação}{40}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Definição das Classes}{40}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Coleta de Dados}{42}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Criação da Base de Dados Rotulada}{44}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Pré-processamento dos Dados}{46}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}BERT}{47}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}DIETClassifier}{48}{subsection.3.5.2}%
-\contentsline {section}{\numberline {3.6}Treinamento dos Algoritmos de Classificação}{51}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}BERT}{51}{subsection.3.6.1}%
-\contentsline {subsection}{\numberline {3.6.2}DIETClassifier}{52}{subsection.3.6.2}%
-\contentsline {section}{\numberline {3.7}Medidas e Método de Avaliação dos Classificadores}{53}{section.3.7}%
-\contentsline {section}{\numberline {3.8}Considerações Finais}{55}{section.3.8}%
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{Método para Avaliação de Classificadores Treinados na Base de Dados do Mercado Livre}}{46}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Visão Geral do Método para Avaliação}{47}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Definição das Classes}{47}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Coleta de Dados}{49}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Criação da Base de Dados Rotulada}{51}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Pré-processamento dos Dados}{53}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}BERT}{54}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}DIETClassifier}{55}{subsection.3.5.2}%
+\contentsline {section}{\numberline {3.6}Treinamento dos Algoritmos de Classificação}{58}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}BERT}{58}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}DIETClassifier}{59}{subsection.3.6.2}%
+\contentsline {section}{\numberline {3.7}Medidas e Método de Avaliação dos Classificadores}{60}{section.3.7}%
+\contentsline {section}{\numberline {3.8}Considerações Finais}{62}{section.3.8}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Resultados}}{56}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Definição das Classes}{56}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Coleta de Dados}{57}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Criação da Base de Dados Rotulada}{58}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Treinamento e Avaliação dos Classificadores}{60}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Configuração do Treinamento e Método de Avaliação}{60}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Experimentos com 40 Classes}{62}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}Experimentos com 28 Classes}{64}{subsection.4.4.3}%
-\contentsline {section}{\numberline {4.5}Comparativo entre Classes Frequentemente Confundidas}{66}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Considerações Finais}{68}{section.4.6}%
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Resultados}}{63}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Definição das Classes}{63}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Coleta de Dados}{64}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Criação da Base de Dados Rotulada}{65}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Treinamento e Avaliação dos Classificadores}{67}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Configuração do Treinamento e Método de Avaliação}{67}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Experimentos com 40 Classes}{69}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Experimentos com 28 Classes}{71}{subsection.4.4.3}%
+\contentsline {section}{\numberline {4.5}Comparativo entre Classes Frequentemente Confundidas}{73}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Considerações Finais}{75}{section.4.6}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{Conclusão}}{69}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Principais Contribuições}{70}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Trabalhos Futuros}{70}{section.5.2}%
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{Conclusão}}{76}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Principais Contribuições}{77}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Trabalhos Futuros}{77}{section.5.2}%
 \vspace {\cftbeforechapterskip }
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {Ap\^endices}}{72}{section*.51}%
+\contentsline {part}{\uppercase {Ap\^endices}}{79}{section*.52}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase []{Matrizes de Confusão}}{73}{appendix.A}%
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase []{Matrizes de Confusão}}{80}{appendix.A}%
