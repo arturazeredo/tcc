@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captura de Imagens Coloridas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        #controls, #preview {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin: 20px;
+            max-width: 800px;
+            width: 100%;
+        }
+        #colorScreen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            display: none;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #status {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        #calibrationVideo {
+            max-width: 100%;
+            display: none;
+        }
+        #imagePreview {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        #imagePreview img {
+            max-width: 200px;
+            margin: 5px;
+        }
+        #videoFeed {
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="controls">
+        <h1>Captura de Imagens Coloridas</h1>
+        <img id="videoFeed" src="/video_feed" alt="Video Feed">
+        <button onclick="startCalibration()">Iniciar Calibração</button>
+        <select id="imageCount">
+            <option value="3">3 imagens</option>
+            <option value="6">6 imagens</option>
+            <option value="9">9 imagens</option>
+        </select>
+        <button onclick="startCapture()">Iniciar Captura</button>
+        <button onclick="stopCapture()">Parar Captura</button>
+        <button onclick="downloadImages()">Baixar Imagens</button>
+        <div id="status"></div>
+    </div>
+    <div id="preview">
+        <h2>Preview das Imagens Capturadas</h2>
+        <div id="imagePreview"></div>
+    </div>
+
+    <script>
+        let captureInterval;
+        let calibrationComplete = false;
+
+        function startCalibration() {
+            fetch('/calibrate')
+                .then(response => {
+                    if (response.ok) {
+                        return updateStatus();
+                    }
+                    throw new Error('Calibração falhou');
+                })
+                .catch(error => {
+                    console.error('Erro durante a calibração:', error);
+                    alert('Erro durante a calibração. Por favor, tente novamente.');
+                });
+        }
+
+        function startCapture() {
+            if (!calibrationComplete) {
+                alert("Por favor, complete a calibração antes de iniciar a captura.");
+                return;
+            }
+            const count = document.getElementById('imageCount').value;
+            fetch('/start_capture', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: `count=${count}`
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === 'started') {
+                        updateStatus();
+                        captureInterval = setInterval(updateStatus, 1000);
+                    }
+                });
+        }
+
+        function stopCapture() {
+            fetch('/stop_capture', { method: 'POST' })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === 'stopped') {
+                        clearInterval(captureInterval);
+                        updateStatus();
+                        updateImagePreview();
+                    }
+                });
+        }
+
+        function updateStatus() {
+            return fetch('/get_capture_status')
+                .then(response => response.json())
+                .then(data => {
+                    const statusElement = document.getElementById('status');
+                    if (data.capturing) {
+                        statusElement.textContent = `Capturando: ${data.images_captured} de ${data.images_to_capture}`;
+                    } else {
+                        statusElement.textContent = 'Pronto para capturar';
+                    }
+                    calibrationComplete = data.calibration_complete;
+                });
+        }
+
+        function updateImagePreview() {
+            fetch('/list_captured_images')
+                .then(response => response.json())
+                .then(data => {
+                    const previewElement = document.getElementById('imagePreview');
+                    previewElement.innerHTML = '';
+                    data.images.forEach(image => {
+                        const img = document.createElement('img');
+                        img.src = `/captured_images/${image}?t=${new Date().getTime()}`;
+                        img.alt = image;
+                        img.onerror = function() {
+                            this.src = 'https://via.placeholder.com/150?text=Imagem+não+disponível';
+                        };
+                        previewElement.appendChild(img);
+                    });
+                })
+                .catch(error => {
+                    console.error('Erro ao atualizar o preview das imagens:', error);
+                });
+        }
+
+        function downloadImages() {
+            window.location.href = '/download_images';
+        }
+
+        updateStatus();
+        updateImagePreview();
+
+        // Atualiza o preview das imagens a cada 5 segundos
+        setInterval(updateImagePreview, 5000);
+    </script>
+</body>
+</html>

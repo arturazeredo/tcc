@@ -1,0 +1,6 @@
+data/*
+__*
+src/__pycache__/*
+.cache
+*.pyc
+**/__pycache__/

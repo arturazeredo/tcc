@@ -1,0 +1,385 @@
+<html><head><base href="https://creativesandbox.edgecompute.app/interactive-camera-interface-v9/">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interactive Camera Interface</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+  }
+  #camera-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #button-container {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+    z-index: 10;
+  }
+  .capture-btn, #switch-camera-btn {
+    padding: 15px 20px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    color: #000;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .capture-btn:hover, #switch-camera-btn:hover {
+    background-color: rgba(255, 255, 255, 1);
+    transform: scale(1.05);
+  }
+  #flash {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.1s ease-in;
+  }
+  #switch-camera-btn {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #preview-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+  #preview-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 90%;
+    max-height: 90%;
+    overflow-y: auto;
+    position: relative;
+  }
+  #preview-image {
+    max-width: 100%;
+    max-height: 50vh;
+    object-fit: contain;
+    margin-bottom: 20px;
+  }
+  #close-preview-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+  }
+  #close-preview-btn:hover {
+    color: #000;
+  }
+  .form-group {
+    margin-bottom: 15px;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  select, input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  #send-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #send-button:hover {
+    background-color: #45a049;
+  }
+  #send-button svg {
+    margin-right: 10px;
+  }
+  @media (orientation: landscape) {
+    #video {
+      width: 70vh;
+      height: 100%;
+    }
+  }
+</style>
+</head>
+<body>
+<div id="camera-container">
+  <video id="video" autoplay playsinline></video>
+  <div id="button-container">
+    <button id="color-capture-btn" class="capture-btn">Color</button>
+    <button id="normal-capture-btn" class="capture-btn">Capture</button>
+    <button id="white-capture-btn" class="capture-btn">White</button>
+  </div>
+  <button id="switch-camera-btn">Switch Camera</button>
+</div>
+<div id="flash"></div>
+
+<div id="preview-popup">
+  <div id="preview-content">
+    <button id="close-preview-btn">&times;</button>
+    <img id="preview-image" alt="Captured photo preview">
+    <div class="form-group">
+      <label for="color">Color:</label>
+      <input type="text" id="color" readonly>
+    </div>
+    <div class="form-group">
+      <label for="eye-direction">Eye Direction:</label>
+      <select id="eye-direction">
+        <option value="esquerda cima">Esquerda Cima</option>
+        <option value="cima">Cima</option>
+        <option value="direita cima">Direita Cima</option>
+        <option value="esquerda">Esquerda</option>
+        <option value="centro">Centro</option>
+        <option value="direita">Direita</option>
+        <option value="esquerda baixo">Esquerda Baixo</option>
+        <option value="baixo">Baixo</option>
+        <option value="direita baixo">Direita Baixo</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="distance">Distance (cm):</label>
+      <input type="number" id="distance" min="0">
+    </div>
+    <div class="form-group">
+      <label for="device">Device:</label>
+      <select id="device">
+        <option value="android">Android</option>
+        <option value="iphone">iPhone</option>
+        <option value="pc">PC</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="illumination">Illumination:</label>
+      <select id="illumination">
+        <option value="dentro escuro">Dentro Escuro</option>
+        <option value="dentro claro">Dentro Claro</option>
+        <option value="dentro ameno">Dentro Ameno</option>
+        <option value="fora escuro">Fora Escuro</option>
+        <option value="fora claro">Fora Claro</option>
+        <option value="fora ameno">Fora Ameno</option>
+      </select>
+    </div>
+    <button id="send-button">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="22" y1="2" x2="11" y2="13"></line>
+        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+      </svg>
+      Send
+    </button>
+    <button id="save-locally-button">Save Locally</button>
+  </div>
+</div>
+
+<script>
+const video = document.getElementById('video');
+const colorCaptureBtn = document.getElementById('color-capture-btn');
+const normalCaptureBtn = document.getElementById('normal-capture-btn');
+const whiteCaptureBtn = document.getElementById('white-capture-btn');
+const switchCameraBtn = document.getElementById('switch-camera-btn');
+const flash = document.getElementById('flash');
+const previewPopup = document.getElementById('preview-popup');
+const previewImage = document.getElementById('preview-image');
+const colorInput = document.getElementById('color');
+const sendButton = document.getElementById('send-button');
+const saveLocallyButton = document.getElementById('save-locally-button');
+const closePreviewBtn = document.getElementById('close-preview-btn');
+
+const colors = [
+  { name: 'Yellow', value: '#FFFF00' },
+  { name: 'Magenta', value: '#FF00FF' },
+  { name: 'Blue', value: '#0000FF' },
+  { name: 'Green', value: '#00FF00' },
+  { name: 'Red', value: '#FF0000' },
+  { name: 'White', value: '#FFFFFF' }
+];
+
+let currentStream;
+let facingMode = 'user';
+let capturedImageData;
+
+async function initCamera() {
+  try {
+    if (currentStream) {
+      currentStream.getTracks().forEach(track => track.stop());
+    }
+    const stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: facingMode } });
+    video.srcObject = stream;
+    currentStream = stream;
+    checkCameraAvailability();
+  } catch (err) {
+    console.error('Error accessing camera:', err);
+    alert('Unable to access camera. Please make sure you have granted permission.');
+  }
+}
+
+function capturePhoto(useColorFlash = false, color = null) {
+  const colorObj = color ? { name: color, value: color } : colors[Math.floor(Math.random() * (colors.length - 1))];
+  flash.style.backgroundColor = colorObj.value;
+  flash.style.opacity = '1';
+
+  setTimeout(() => {
+    const canvas = document.createElement('canvas');
+    canvas.width = video.videoWidth;
+    canvas.height = video.videoHeight;
+    canvas.getContext('2d').drawImage(video, 0, 0);
+    
+    capturedImageData = canvas.toDataURL('image/jpeg');
+    previewImage.src = capturedImageData;
+    colorInput.value = colorObj.name;
+    previewPopup.style.display = 'flex';
+
+    setTimeout(() => {
+      flash.style.opacity = '0';
+    }, 300);
+  }, 200);
+}
+
+async function switchCamera() {
+  facingMode = facingMode === 'user' ? 'environment' : 'user';
+  await initCamera();
+}
+
+async function checkCameraAvailability() {
+  const devices = await navigator.mediaDevices.enumerateDevices();
+  const videoDevices = devices.filter(device => device.kind === 'videoinput');
+  switchCameraBtn.style.display = videoDevices.length > 1 ? 'block' : 'none';
+}
+
+function adjustButtonSizes() {
+  const containerWidth = video.offsetWidth;
+  const containerHeight = video.offsetHeight;
+  const btnWidth = Math.min(containerWidth, containerHeight) * 0.2;
+  const btnHeight = btnWidth * 0.4;
+  
+  const buttons = [colorCaptureBtn, normalCaptureBtn, whiteCaptureBtn, switchCameraBtn];
+  buttons.forEach(btn => {
+    btn.style.width = `${btnWidth}px`;
+    btn.style.height = `${btnHeight}px`;
+    btn.style.fontSize = `${btnHeight * 0.3}px`;
+  });
+}
+
+function sendData() {
+  const data = {
+    image: capturedImageData.split(',')[1], // base64 data without MIME type
+    color: colorInput.value,
+    eyeDirection: document.getElementById('eye-direction').value,
+    distance: document.getElementById('distance').value,
+    device: document.getElementById('device').value,
+    illumination: document.getElementById('illumination').value
+  };
+
+  // Here you would typically send this data to your server
+  console.log('Sending data:', data);
+  // Example of how you might send this data:
+  // fetch('https://your-api-endpoint.com/save-photo', {
+  //   method: 'POST',
+  //   headers: {
+  //     'Content-Type': 'application/json',
+  //   },
+  //   body: JSON.stringify(data),
+  // })
+  // .then(response => response.json())
+  // .then(result => {
+  //   console.log('Success:', result);
+  //   previewPopup.style.display = 'none';
+  // })
+  // .catch(error => {
+  //   console.error('Error:', error);
+  // });
+
+  // For now, we'll just close the popup
+  previewPopup.style.display = 'none';
+}
+
+function saveLocally() {
+  const data = {
+    image: capturedImageData,
+    color: colorInput.value,
+    eyeDirection: document.getElementById('eye-direction').value,
+    distance: document.getElementById('distance').value,
+    device: document.getElementById('device').value,
+    illumination: document.getElementById('illumination').value
+  };
+
+  const blob = new Blob([JSON.stringify(data)], {type: 'application/json'});
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = 'captured_photo_data.json';
+  link.click();
+  URL.revokeObjectURL(url);
+}
+
+function closePreview() {
+  previewPopup.style.display = 'none';
+}
+
+initCamera();
+colorCaptureBtn.addEventListener('click', () => capturePhoto(true));
+normalCaptureBtn.addEventListener('click', () => capturePhoto(false));
+whiteCaptureBtn.addEventListener('click', () => capturePhoto(true, '#FFFFFF'));
+switchCameraBtn.addEventListener('click', switchCamera);
+sendButton.addEventListener('click', sendData);
+saveLocallyButton.addEventListener('click', saveLocally);
+closePreviewBtn.addEventListener('click', closePreview);
+
+window.addEventListener('load', adjustButtonSizes);
+window.addEventListener('resize', adjustButtonSizes);
+
+// Ensure the switch camera button is always visible
+video.addEventListener('loadedmetadata', () => {
+  switchCameraBtn.style.display = 'block';
+});
+</script>
+</body>
+</html>

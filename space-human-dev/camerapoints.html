@@ -1,0 +1,237 @@
+<html><head><base href="https://websimulationengine.com/camera-grid-app/">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Camera Grid Game</title>
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+    }
+    #app {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    #cameraView {
+        flex-grow: 1;
+        width: 100%;
+        object-fit: cover;
+    }
+    #gridOverlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        opacity: 0.5;
+        pointer-events: none;
+    }
+    .gridCell {
+        border: 1px solid white;
+    }
+    #controls {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 10px;
+    }
+    button {
+        padding: 10px 15px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    #circle {
+        position: absolute;
+        border: 2px solid red;
+        border-radius: 50%;
+        pointer-events: none;
+        display: none;
+    }
+    @media (min-width: 768px) {
+        #app {
+            width: 70vh;
+            margin: 0 auto;
+        }
+    }
+</style>
+</head>
+<body>
+<div id="app">
+    <video id="cameraView" autoplay playsinline></video>
+    <div id="gridOverlay">
+        <div class="gridCell"></div>
+        <div class="gridCell"></div>
+        <div class="gridCell"></div>
+        <div class="gridCell"></div>
+        <div class="gridCell"></div>
+        <div class="gridCell"></div>
+        <div class="gridCell"></div>
+        <div class="gridCell"></div>
+        <div class="gridCell"></div>
+    </div>
+    <div id="circle"></div>
+    <div id="controls">
+        <button id="fivePoints">5 points</button>
+        <button id="ninePoints">9 points</button>
+        <button id="thirtySixPoints">36 points</button>
+    </div>
+</div>
+
+<script>
+    const cameraView = document.getElementById('cameraView');
+    const circle = document.getElementById('circle');
+    const fivePointsBtn = document.getElementById('fivePoints');
+    const ninePointsBtn = document.getElementById('ninePoints');
+    const thirtySixPointsBtn = document.getElementById('thirtySixPoints');
+    const app = document.getElementById('app');
+
+    let currentGame = null;
+    let stream = null;
+
+    // Start the camera
+    async function startCamera() {
+        try {
+            stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: 'user' } });
+            cameraView.srcObject = stream;
+        } catch (err) {
+            console.error("Error accessing the camera", err);
+        }
+    }
+
+    // Game class
+    class Game {
+        constructor(positions, gameType) {
+            this.positions = positions;
+            this.gameType = gameType;
+            this.currentPosition = 0;
+            this.photos = [];
+            this.folderName = '';
+            this.isGameActive = false;
+        }
+
+        start() {
+            this.folderName = `${new Date().toISOString().replace(/[:T]/g, '-').split('.')[0]}_${this.gameType}`;
+            setTimeout(() => {
+                this.showCircle();
+                this.isGameActive = true;
+                app.addEventListener('click', this.handleTap);
+            }, 500); // 500ms delay before starting the game
+        }
+
+        showCircle() {
+            const pos = this.positions[this.currentPosition];
+            const diameter = Math.min(app.offsetWidth, app.offsetHeight) * 0.16;
+            const radius = diameter / 2;
+            
+            // Adjust position to ensure circle is fully inside the grid cell
+            const cellWidth = app.offsetWidth / 3;
+            const cellHeight = app.offsetHeight / 3;
+            
+            const minX = Math.floor(pos.x * 3) * cellWidth + radius;
+            const maxX = (Math.floor(pos.x * 3) + 1) * cellWidth - radius;
+            const minY = Math.floor(pos.y * 3) * cellHeight + radius;
+            const maxY = (Math.floor(pos.y * 3) + 1) * cellHeight - radius;
+            
+            const adjustedX = Math.max(minX, Math.min(maxX, pos.x * app.offsetWidth));
+            const adjustedY = Math.max(minY, Math.min(maxY, pos.y * app.offsetHeight));
+
+            circle.style.width = `${diameter}px`;
+            circle.style.height = `${diameter}px`;
+            circle.style.left = `${adjustedX - radius}px`;
+            circle.style.top = `${adjustedY - radius}px`;
+            circle.style.display = 'block';
+        }
+
+        handleTap = async (event) => {
+            if (!this.isGameActive) return;
+            event.preventDefault(); // Prevent default behavior
+            await this.takePhoto();
+            this.currentPosition++;
+            if (this.currentPosition < this.positions.length) {
+                this.showCircle();
+            } else {
+                this.end();
+            }
+        }
+
+        async takePhoto() {
+            const canvas = document.createElement('canvas');
+            canvas.width = cameraView.videoWidth;
+            canvas.height = cameraView.videoHeight;
+            canvas.getContext('2d').drawImage(cameraView, 0, 0);
+            const blob = await new Promise(resolve => canvas.toBlob(resolve, 'image/jpeg'));
+            await this.savePhoto(blob);
+        }
+
+        async savePhoto(blob) {
+            const pos = this.positions[this.currentPosition];
+            const fileName = `${this.gameType}_x${Math.round(pos.x * 100)}_y${Math.round(pos.y * 100)}.jpg`;
+            
+            try {
+                // Request permission to access file system (for supported browsers)
+                const dirHandle = await window.showDirectoryPicker();
+                const folderHandle = await dirHandle.getDirectoryHandle(this.folderName, { create: true });
+                const fileHandle = await folderHandle.getFileHandle(fileName, { create: true });
+                const writable = await fileHandle.createWritable();
+                await writable.write(blob);
+                await writable.close();
+                console.log(`Saved ${fileName} to ${this.folderName}`);
+            } catch (err) {
+                // Fallback for browsers that don't support File System Access API
+                const link = document.createElement('a');
+                link.href = URL.createObjectURL(blob);
+                link.download = fileName;
+                link.click();
+                URL.revokeObjectURL(link.href);
+                console.log(`Downloaded ${fileName}`);
+            }
+        }
+
+        end() {
+            circle.style.display = 'none';
+            app.removeEventListener('click', this.handleTap);
+            this.isGameActive = false;
+            currentGame = null;
+            alert('Game finished! All photos have been saved.');
+        }
+    }
+
+    const fivePointPositions = [
+        {x: 1/6, y: 1/6}, {x: 5/6, y: 1/6}, {x: 1/6, y: 5/6}, {x: 5/6, y: 5/6}, {x: 0.5, y: 0.5}
+    ];
+
+    const ninePointPositions = [
+        {x: 1/6, y: 1/6}, {x: 0.5, y: 1/6}, {x: 5/6, y: 1/6},
+        {x: 1/6, y: 0.5}, {x: 0.5, y: 0.5}, {x: 5/6, y: 0.5},
+        {x: 1/6, y: 5/6}, {x: 0.5, y: 5/6}, {x: 5/6, y: 5/6}
+    ];
+
+    const thirtySixPointPositions = [];
+    for (let i = 0; i < 6; i++) {
+        for (let j = 0; j < 6; j++) {
+            thirtySixPointPositions.push({x: (i + 0.5) / 6, y: (j + 0.5) / 6});
+        }
+    }
+
+    function startGame(positions, gameType) {
+        if (currentGame) return;
+        currentGame = new Game(positions, gameType);
+        currentGame.start();
+    }
+
+    fivePointsBtn.addEventListener('click', () => startGame(fivePointPositions, '5points'));
+    ninePointsBtn.addEventListener('click', () => startGame(ninePointPositions, '9points'));
+    thirtySixPointsBtn.addEventListener('click', () => startGame(thirtySixPointPositions, '36points'));
+
+    startCamera();
+</script>
+</body>
+</html>
